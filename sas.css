@@ -1,0 +1,124 @@
+@font-face{
+    font-family: 'Iceland';
+    src: url('./Font/Iceland-Regular.ttf')format('truetype');
+}
+@font-face {
+    font-family:'Orbitron';
+    src: url('./Font/Orbitron-VariableFont_wght.ttf')format('truetype');
+    
+}
+
+
+body{
+    background: black;
+    margin: 0px;
+    padding: 0px;
+   
+}
+* {
+    box-sizing: border-box;
+}
+/*for the bg image*/
+.heropage{
+   margin:0px;
+   padding:0px;
+   width: 100vw;
+   height:100vh;
+    margin-left: 100px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+/*used for the positioning of the navbar*/
+.navbtn{
+    margin:0px;
+    padding:0px;
+    font-family: Iceland;
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: nowrap;
+    position: absolute;
+    box-sizing: border-box;
+    margin-left: 2990px;
+    margin-bottom:2900px;
+    margin-top: 50px;
+    top:0;
+    right:0;
+}
+
+
+/*used for giving style to navbar */
+.hbtn1{
+    font-family: Iceland;
+     background-color: #00000000;
+  border: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 75px;
+  margin:70px 70px;
+  cursor: pointer;
+  position:relative
+}
+.hbtn1:hover{
+     transition-duration: 0.3s;
+     color:#9D92CF;
+}
+
+.hbtn1::after{
+    content:'';
+    left:0;
+    bottom:0;
+    width:100%;
+    height: 5px;
+    background:#9D92CF;
+    transform: scaleX(0);
+    transform-origin:right;
+    transition: transform 0.3s ease-in-out;
+    position:absolute;
+  
+}
+
+.hbtn1:hover::after{
+    transform:scaleX(1);
+    transform-origin: left;
+}
+
+.rnxglogo{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top:0;
+    left: 0;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.header{
+    font-family: Iceland;
+    color: #9D92CF;
+    position: absolute;
+    font-size: 300px;
+    top:0;
+    left:0;
+    margin-left: 800px;
+    margin-top: 550px;
+}
+
+.lbp{
+    height:500px;
+    width:500px;
+    position:absolute;
+    top:0;
+    left:0;
+    margin-left: 50px;
+    margin-top: 1500px;
+
+}
+
+
+
