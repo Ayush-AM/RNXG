@@ -1,0 +1,107 @@
+/* Make the wrapper take full width and align card to the right */
+.mentor-wrapper {
+    justify-content: center;
+  display: flex;
+  padding: 2rem;
+}
+
+.mentor-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  color: white;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  font-family: "Sofia Sans", sans-serif;
+  
+  /* 3D Elegant Look */
+  background: rgba(255, 255, 255, 0.05); /* translucent glass */
+  backdrop-filter: blur(12px); /* glass blur */
+  border: 1px solid rgba(255, 255, 255, 0.15); /* subtle inner border */
+  box-shadow: 
+    0 20px 30px rgba(0, 0, 0, 0.15), 
+    inset 0 0 0.5px rgba(255, 255, 255, 0.1); /* soft lift & depth */
+  transition: all 0.3s ease;
+}
+
+/* Optional: Hover lift */
+.mentor-card:hover {
+  transform: scale(1.02);
+  box-shadow: 
+    0 30px 40px rgba(0, 0, 0, 0.2), 
+    inset 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+
+.mentor-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18rem;
+}
+
+.mentor-image {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 1rem;
+
+  /* 3D Elevation */
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.3); /* outer shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional hover effect */
+.mentor-image:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 15px 25px rgba(0, 0, 0, 0.4),
+}
+
+.mentor-name {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.mentor-role {
+  font-size: 0.85rem;
+  color: #ccc;
+  text-align: center;
+}
+
+.mentor-right {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.mentor-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.mentor-quote {
+  font-family: "Sofia Sans", sans-serif;
+  text-align: justify;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.underline{
+    margin-bottom: 10%;
+}
+
+@media (max-width: 768px){
+    .mentor-card{
+        min-width: 768px - 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

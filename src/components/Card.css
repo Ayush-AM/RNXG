@@ -1,0 +1,43 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 per row */
+  row-gap: 5rem;
+  column-gap: 10rem;
+  padding: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.card {
+  aspect-ratio: 4 / 5; /* 👈 Keeps fixed ratio like 4:3 */
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+  border: 0.5rem solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hover Effect */
+.card:hover {
+  border: none;
+  cursor: pointer;
+}
+
+/* 🔁 Responsive Grid for Small Screens */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
