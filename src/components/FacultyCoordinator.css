@@ -1,8 +1,9 @@
 /* Make the wrapper take full width and align card to the right */
 .mentor-wrapper {
     justify-content: center;
-  display: flex;
-  padding: 2rem;
+    display: flex;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 .mentor-card {
@@ -27,7 +28,7 @@
 
 /* Optional: Hover lift */
 .mentor-card:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
   box-shadow: 
     0 30px 40px rgba(0, 0, 0, 0.2), 
     inset 0 0 1px rgba(255, 255, 255, 0.2);
@@ -62,12 +63,12 @@
 .mentor-name {
   margin-top: 12px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .mentor-role {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #ccc;
   text-align: center;
 }
@@ -103,5 +104,9 @@
         justify-content: center;
         align-items: center;
     }
+    .mentor-wrapper{
+      padding: 5rem;
+    }
 }
+
 

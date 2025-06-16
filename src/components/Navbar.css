@@ -1,0 +1,42 @@
+.box{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.logo{
+    height: 6rem;
+    width: 6rem;
+    background-image: url(/src/assets/images/WHITE\ \ RNXG\ LOGO.png);
+    background-size: cover;
+}
+
+.nav-items{
+    color: white;
+    display: flex;
+    gap: 4rem;
+    font-size: 1.5rem;
+    font-family: "Iceland", sans-serif;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.underline{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-color: #D7B5E6;
+}
+
+.Achievments{
+    color: #D7B5E6;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+}
