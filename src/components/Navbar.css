@@ -1,6 +1,7 @@
 .box{
     justify-content: space-between;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
 }

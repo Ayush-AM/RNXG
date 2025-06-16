@@ -7,7 +7,7 @@ const FacultyCoordinator = () => {
       <div className="mentor-card">
         <div className="mentor-left">
           <img
-            src="/src/assets/images/bhaleraoSir.png"
+            src="/images/bhaleraoSir.png"
             alt="Dr. Milind V. Bhalerao"
             className="mentor-image"
           />

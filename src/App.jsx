@@ -4,20 +4,28 @@ import "./App.css";
 import Card from "./components/Card";
 import FacultyCoordinator from "./components/FacultyCoordinator";
 import Navbar from "./components/Navbar";
+import members from './data/clubMembers.json'
 
 
 function App() {
 
-  const cards = Array.from({ length: 9 }, (_, i) => `Card ${i + 1}`);
+  const cards = Array.from({ length: 39 }, (_, i) => `Card ${i + 1}`);
 
   return (
     <>
     <div className="opacityContainer">
       <Navbar />
     <FacultyCoordinator/>
-      <div className="card-grid">
-        {cards.map((title, index) => (
-          <Card key={index} title={title} />
+ <div className="card-grid">
+        {members.map((member, index) => (
+          <Card
+            key={index}
+            name={member.name}
+            department={member.department}
+            position={member.position}
+            linkedin={member.linkedin}
+            photo={member.photo}
+          />
         ))}
       </div>
       </div>
