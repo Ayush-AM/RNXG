@@ -1,9 +1,9 @@
 /* Make the wrapper take full width and align card to the right */
 .mentor-wrapper {
-    justify-content: center;
-    display: flex;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .mentor-card {
@@ -15,13 +15,12 @@
   padding: 2rem;
   border-radius: 1.5rem;
   font-family: "Sofia Sans", sans-serif;
-  
+
   /* 3D Elegant Look */
   background: rgba(255, 255, 255, 0.05); /* translucent glass */
   backdrop-filter: blur(12px); /* glass blur */
   border: 1px solid rgba(255, 255, 255, 0.15); /* subtle inner border */
-  box-shadow: 
-    0 20px 30px rgba(0, 0, 0, 0.15), 
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15),
     inset 0 0 0.5px rgba(255, 255, 255, 0.1); /* soft lift & depth */
   transition: all 0.3s ease;
 }
@@ -29,11 +28,9 @@
 /* Optional: Hover lift */
 .mentor-card:hover {
   transform: scale(1.03);
-  box-shadow: 
-    0 30px 40px rgba(0, 0, 0, 0.2), 
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.2),
     inset 0 0 1px rgba(255, 255, 255, 0.2);
 }
-
 
 .mentor-left {
   display: flex;
@@ -48,16 +45,14 @@
   border-radius: 1rem;
 
   /* 3D Elevation */
-  box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.3); /* outer shadow */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* outer shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Optional hover effect */
 .mentor-image:hover {
   transform: scale(1.03);
-  box-shadow:
-    0 15px 25px rgba(0, 0, 0, 0.4),
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
 }
 
 .mentor-name {
@@ -93,8 +88,8 @@
   color: #fff;
 }
 
-.underline{
-    margin-bottom: 10%;
+.underline {
+  margin-bottom: 10%;
 }
 
 @media (max-width: 1024px) {
@@ -130,5 +125,3 @@
     width: 7rem;
   }
 }
-
-

@@ -6,7 +6,12 @@ const Card = ({ photo, name, department, position, linkedin }) => {
     <div className="card">
       <div className="card-image-wrapper">
         <img src={photo} alt={name} className="card-photo" />
-        <a href={linkedin} target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+        <a
+          href={linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="linkedin-icon"
+        >
           <FaLinkedin />
         </a>
       </div>
