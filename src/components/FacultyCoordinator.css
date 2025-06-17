@@ -9,7 +9,7 @@
 .mentor-card {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
   color: white;
   width: 100%;
   padding: 2rem;
@@ -71,7 +71,7 @@
 .mentor-right {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 65%;
 }
 
 .mentor-title {

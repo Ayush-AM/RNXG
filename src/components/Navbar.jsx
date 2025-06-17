@@ -4,7 +4,6 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="box">
         <div className="logo"></div>
         <div className="nav-items">
           <div>
@@ -25,7 +24,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
