@@ -1,11 +1,11 @@
 import "./Card.css";
 import { FaLinkedin } from "react-icons/fa";
 
-const Card = ({ photo, name, department, position, linkedin }) => {
+const Card = ({ photo, name, position, linkedin }) => {
   return (
     <div className="card">
       <div className="card-image-wrapper">
-        <img src={photo} alt={name} className="card-photo" />
+        <a href={linkedin} target="_blank" rel="noopener noreferrer"><img src={photo} alt={name} className="card-photo" /></a>
         <a
           href={linkedin}
           target="_blank"
@@ -17,7 +17,6 @@ const Card = ({ photo, name, department, position, linkedin }) => {
       </div>
       <div className="card-details">
         <h3>{name}</h3>
-        <p>{department}</p>
         <p>{position}</p>
       </div>
     </div>

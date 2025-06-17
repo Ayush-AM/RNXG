@@ -17,7 +17,6 @@ function App() {
             <Card
               key={index}
               name={member.name}
-              department={member.department}
               position={member.position}
               linkedin={member.linkedin}
               photo={member.photo}

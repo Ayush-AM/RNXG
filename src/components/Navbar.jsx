@@ -17,10 +17,10 @@ const Navbar = () => {
           </div>
           <div>
             <a href="">ACHIEVEMENTS</a>
-            <div className="underline border-3 border-white"></div>
           </div>
-          <div className="about">
+          <div className="aboutus">
             <a href="">ABOUT US</a>
+            <div className="underline border-3 border-white"></div>
           </div>
         </div>
       </div>
