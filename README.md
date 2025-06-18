@@ -4,7 +4,7 @@
 Project Path: `c:\Users\ASUS\OneDrive\Desktop\Official Rnxg\RNXG\README.md`
 
 ## Overview
-RNXG (Robotics for Next Generation) is a dynamic robotics club focused on innovation and technological advancement. Our platform serves as a central hub for robotics enthusiasts, showcasing our projects, achievements, and various opportunities for participation.
+RNXG (Robotics for Next Generation) is a dynamic robotics club focused on innovation and technological advancement. Our platform serves as a central hub for robotics enthusiasts, showcasing our projects, achievements, and various opportunities for participation. n
 
 ## Website Structure
 Our React-Vite powered website consists of the following main sections:
