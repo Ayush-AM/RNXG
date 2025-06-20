@@ -14,24 +14,24 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-right:5rem; ;
+    margin-right:3rem; ;
 }
 
 .logo{
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
     background-image:url(rnxg\ logo\ v4\ 4.png);
     background-size: cover;
-    margin-left: 10rem;
+    margin-left: 7.5rem;
     margin-top: 1rem;
 }
 
 .nav-items{
     display: flex;
-    gap: 5rem;
-    margin-left: 10rem;
+    gap: 4rem;
+    margin-left: 9rem;
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Iceland", sans-serif;
 }
 
@@ -45,40 +45,41 @@ body{
 }
 
 .content{
-    height: 10rem;
-    width: 55rem;
-    font-size: 2.8rem;
+    height: 8rem;
+    width: 40rem;
+    font-size: 2rem;
     font-family: "inclusive", sans-serif;
-    margin-left: 12rem;
+    margin-left: 8rem;
     margin-top: 2.5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 6rem;
 }
 
 .heading{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: orbitron;
-    margin-top: 8.5rem;
-    margin-left: 12rem;
+    margin-top: 8rem;
+    margin-left: 8rem;
     margin-bottom: 2rem;
 }
 
 h1{
-    height: 7rem;
-    width: 33rem;
+    height: 4.5rem;
+    width: 25rem;
     background-image: url(Rectangle\ 862.png),url(Rectangle\ 861.png) ;
     background-position: (left center, right center);
     background-size: 100% 100%, 100% 100%;
     background-repeat: no-repeat;
-    padding-left: 2rem;
-    padding-top: 1rem;
+    padding-left: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .image{
-    height: 550px;
-    width: 600px;
+    height: 420px;
+    width: 430px;
     background-image: url(image\ 20.png);
     background-size: cover;
-    margin-right: 5rem;
+    margin-right: 4rem;
     margin-top: 2rem;
 }
 
@@ -97,10 +98,10 @@ h1{
 .stats-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
-  margin-left: 3rem;
+  margin-bottom: 1rem;
+  margin-left: 2.5rem;
   width: 100%;
-  height: 15rem;
+  height: 11rem;
   background-image: url(Rectangle\ 869.png);
   background-size: cover;
   border-radius: 50px;
@@ -109,7 +110,7 @@ h1{
 
 .stat-box {
   flex: 1;
-  padding: 3rem;
+  padding: 2rem;
   text-align: center;
   border-right: 2.5px solid;
   border-image: linear-gradient(to top,black,white,black)1;
@@ -120,31 +121,26 @@ h1{
 }
 
 .stat-number {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-family: "sofia sans";
   color: white;
 }
 
 .stat-label {
-  margin-top: 1rem;
-  font-size: 2rem;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
   font-family: orbitron;
 color:white;
 }
 @media screen and (max-width: 768px) {
     
-/* .box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-right: 1rem;
-} */
+
 
    .logo{
-    margin-top: 2rem;
-    margin-left: 2.5rem; 
-    height: 3.5rem;
-    width: 3.5rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem; 
+    height: 3rem;
+    width: 3rem;
 }
 
     .nav-items{
@@ -152,40 +148,40 @@ color:white;
     }
 
     .content{
-     margin-top: 1rem;
-     width: 44rem;
-     margin-left: 2.5rem;
-     font-size: 2.4rem;
-     padding-bottom: 1.5rem;
+     margin-top: 0.1rem;
+     width: 35rem;
+     margin-left: 2rem;
+     font-size: 1.7rem;
+     padding-bottom: 0.5rem;
      
     }
     .heading{
-     margin-top: 3rem;
-     margin-left: 9rem;
+     margin-top: 1.5rem;
+     margin-left: 7rem;
     }
 
     h1{
-     width: 24rem;
-     height: 5rem;
-     font-size: 3rem;
-     padding-left: 1.7rem;
-     padding-right: 1.7rem;
-     
+     width: 18rem;
+     height: 3.5rem;
+     font-size: 2.3rem;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
     }
+
     .image{
-     height: 310px;
-     width: 310px;
-     margin-top: rem;
+     height: 250px;
+     width: 250px;
+     margin-top: 0.2rem;
     }
 
     .one-image{
-      margin-left: 12rem;
+      margin-left: 10rem;
     }
     .stats-container {
         justify-content: center;
         overflow: hidden;
-       margin-top: 2rem; 
-      height: 10rem;
+       margin-top: 1.4rem; 
+      height: 8rem;
       width: 100%;
       margin-left: 2rem;
       
@@ -194,15 +190,14 @@ color:white;
     }
     .stat-box {
         padding: 1rem;
-        font-size: 1.5rem;
         border-right: 2px solid white;      }
     
       .stat-number {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
       }
     
       .stat-label {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         
         
       }
