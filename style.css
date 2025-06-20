@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-size: cover;
+    background-image: url(milad-fakurian-G5fdwRVoi4Q-unsplash\ 3.png);
+    background-color: black;
+    color: white;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right:5rem; ;
+}
+
+.logo{
+    height: 6rem;
+    width: 6rem;
+    background-image:url(rnxg\ logo\ v4\ 4.png);
+    background-size: cover;
+    margin-left: 10rem;
+    margin-top: 1rem;
+}
+
+.nav-items{
+    display: flex;
+    gap: 5rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: "Iceland", sans-serif;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.about{
+    color: #9D92FC;
+}
+
+.content{
+    height: 10rem;
+    width: 55rem;
+    font-size: 2.8rem;
+    font-family: "inclusive", sans-serif;
+    margin-left: 12rem;
+    margin-top: 2.5rem;
+    padding-bottom: 10rem;
+}
+
+.heading{
+    font-size: 2rem;
+    font-family: orbitron;
+    margin-top: 8.5rem;
+    margin-left: 12rem;
+    margin-bottom: 2rem;
+}
+
+h1{
+    height: 7rem;
+    width: 33rem;
+    background-image: url(Rectangle\ 862.png),url(Rectangle\ 861.png) ;
+    background-position: (left center, right center);
+    background-size: 100% 100%, 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.image{
+    height: 550px;
+    width: 600px;
+    background-image: url(image\ 20.png);
+    background-size: cover;
+    margin-right: 5rem;
+    margin-top: 2rem;
+}
+
+.one-image{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 4rem;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  width: 100%;
+  height: 15rem;
+  background-image: url(Rectangle\ 869.png);
+  background-size: cover;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.stat-box {
+  flex: 1;
+  padding: 3rem;
+  text-align: center;
+  border-right: 2.5px solid;
+  border-image: linear-gradient(to top,black,white,black)1;
+}
+
+.stat-box:last-child {
+  border-right: none;
+}
+
+.stat-number {
+  font-size: 4.5rem;
+  font-family: "sofia sans";
+  color: white;
+}
+
+.stat-label {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: orbitron;
+color:white;
+}
+@media screen and (max-width: 768px) {
+    
+/* .box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+} */
+
+   .logo{
+    margin-top: 2rem;
+    margin-left: 2.5rem; 
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+    .nav-items{
+     display: none;
+    }
+
+    .content{
+     margin-top: 1rem;
+     width: 44rem;
+     margin-left: 2.5rem;
+     font-size: 2.4rem;
+     padding-bottom: 1.5rem;
+     
+    }
+    .heading{
+     margin-top: 3rem;
+     margin-left: 9rem;
+    }
+
+    h1{
+     width: 24rem;
+     height: 5rem;
+     font-size: 3rem;
+     padding-left: 1.7rem;
+     padding-right: 1.7rem;
+     
+    }
+    .image{
+     height: 310px;
+     width: 310px;
+     margin-top: rem;
+    }
+
+    .one-image{
+      margin-left: 12rem;
+    }
+    .stats-container {
+        justify-content: center;
+        overflow: hidden;
+       margin-top: 2rem; 
+      height: 10rem;
+      width: 100%;
+      margin-left: 2rem;
+      
+
+      
+    }
+    .stat-box {
+        padding: 1rem;
+        font-size: 1.5rem;
+        border-right: 2px solid white;      }
+    
+      .stat-number {
+        font-size: 2.5rem;
+      }
+    
+      .stat-label {
+        font-size: 1.1rem;
+        
+        
+      }
+    }
