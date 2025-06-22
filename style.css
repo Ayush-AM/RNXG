@@ -1,240 +1,209 @@
-/* Base resets */
+/* ---------------------------------- */
+/*           Base / Desktop           */
+/* ---------------------------------- */
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Iceland', sans-serif;
-    /* background-color: #000000; */
-    /* color: #fff; */
-    /* height: 100vh; */
-    /* make body fill the viewport */
-    /* display: flex;                */
-    /* align-items: center; */
-    /* vertical centering */
-    /* justify-content: center; */
-    /* horizontal centering */
-    /* background: #000; */
+  font-family: 'Iceland', sans-serif;
+  background-color: black;
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 20px 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 17px 60px 10px 80px;
 }
 
 nav a {
-    margin: 0 12px;
-    text-decoration: none;
-    color: #ccc;
-    font-size: 24px;
-    letter-spacing: 1px;
-    position: relative;
+  margin: 0 12px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 22px;
+  letter-spacing: 3px;
+  position: relative;
+  font-weight: 500;
 }
 
 nav a.active {
-    color: #9D92CF;
-    /* simulate underline */
-    border-bottom: 3px solid #9D92CF;
-    border-radius: 2px;
-    padding-bottom: 4px;
-}
-
-
-/* .desktop {
-    padding: 0 130px;
-    max-width: 1440px;
-    margin: 0 auto;
-}
-.tablet {
-    padding: 0 96px;
-}
-.mobile {
-    padding: 0 16px;
-} */
-
-.container {
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    min-height: 680px;
-    background-color: black;
-    padding: 40px 130px;
-}
-
-.left {
-    flex: 0 0 60%;
-}
-
-h1 {
-    color: #9D92CF;
-    font-size: 7rem;
-    font-weight: 300;
-    font-family: Iceland;
-    padding: 10px 0px;
-}
-
-p {
-    color: 9D92CF;
-    font-size: 3rem;
-    font-weight: 300;
-    margin: 20px 0px;
-}
-
-.divider {
-    width: 100%;
-    height: 50px;
-    /* background: linear-gradient(to right, #999 0%, #ccc 50%, #999 100%); */
+  color: #9D92CF;
+  border-bottom: 3px solid #9D92CF;
+  border-radius: 2px;
+  padding-bottom: 4px;
 }
 
 .divider-img {
-    width: 70%;
-    height: 50px;
+  width: 93%;
+  height: 47px;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  margin: 12px 68px;
+  position: relative;
+  height: 396px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* padding: 0px 0px 0px 85px; */
+  /* align-items: center; */
 }
 
 .right {
-    flex: 0 0 30%;
-    height: 100%;
-    /* ensure it fills container height */
-    width: 100%;
+  flex: 1;
+  width: 100px;
+  /* overflow: visible; */
+
+  /* margin: 32px;
+  align-items: right; */
 }
 
+
+.left h1 {
+  color: #5352e8;
+
+  font-size: 92px;
+  font-weight: 300;
+  margin: 20PX;
+  /* width: 75%; */
+}
+
+.left p {
+  color: #f0bdf1;
+  font-size: 31px;
+  margin: 20px;
+}
+
+
 .rightobj {
-    width: 74vh;
-    height: 70vh;
-    border: none;
-    transform: translate(-12%, -30%) scale(0.7);
-    /* width: 73vh;
-    height: 89vh;
-    border: none;
-    transform: translate(-12%, -6%) scale(0.6); /*this % use for alignment of 3d obj very useful instead margin/top/left etc */
-    /* z-index: 0;   */
+  width: 70vw;
+  height: 53vw;
+  
+   transform: translate(-97px, -223px) scale(0.57); /*he vprla tr issue jte responsive mdh khup */
 }
-.slider {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
+
+/* vh is fix size dimension never use is using responsiveness */
+
+/* Slider */
+[type=radio] {
+  display: none;
 }
-.slider .slider__inner {
-  display: flex;
-  position: relative;
-  align-items: center;
-  max-width: 750px;
-  height: 400px;
-  margin: 0 auto;
-}
-.slider .slider__inner .slider__item {
+
+#slider {
+  height: 15vw;
+  transform-style: preserve-3d;
+  width: 37vw;
   position: absolute;
-  height: 150px;
-  width: 150px;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  z-index: -1;
-  pointer-events: none;
-  user-select: none;
-}
-.slider .slider__inner .slider__item-trigger-next {
-  left: 15%;
-  transform: translateX(-50%);
-}
-.slider .slider__inner .slider__item-trigger-previous {
-  left: 85%;
-  transform: translateX(-50%);
-}
-.slider .slider__inner .slider__item-selected {
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
-              0 0 60px rgba(255, 255, 255, 0.45),
-              0 0 110px rgba(255, 255, 255, 0.25),
-              0 0 100px rgba(255, 255, 255, 0.1);
-  height: 300px;
-  opacity: 1;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-  z-index: 2;
-}
-.slider .slider__inner .slider__item-previous,
-.slider .slider__inner .slider__item-next {
-  height: 200px;
-  opacity: 1;
-  width: 200px;
-  z-index: 1;
-}
-.slider .slider__inner .slider__item-last,
-.slider .slider__inner .slider__item-first {
-  opacity: .4;
-  z-index: 0;
-}
-.slider .slider__inner .slider__item-previous {
+  top: 70%;
   left: 30%;
-  transform: translateX(-50%);
+  /* top: 75%; */
 }
-.slider .slider__inner .slider__item-next {
-  left: 70%;
-  transform: translateX(-50%);
-}
-.slider .slider__inner .slider__item-first {
-  left: 15%;
-  transform: translateX(-50%);
-}
-.slider .slider__inner .slider__item-last {
-  left: 85%;
-  transform: translateX(-50%);
-}
-.slider .slider__inner .slider__item-container {
-  position: relative;
-  width: 100%;
+
+#slider label {
+  margin: auto;
+  width: 60%;
   height: 100%;
-}
-.slider .slider__inner .slider__item-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.slider .slider__inner .slider__item-datas {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: .5rem 0;
-  background-color: rgba(255, 255, 255, 0.75);
-  text-align: center;
-  font-family: 'Arial';
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.slider .slider__controls {
-  display: flex;
+  border-radius: 4px;
   position: absolute;
   left: 0;
   right: 0;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-.slider .slider__controls-previous,
-.slider .slider__controls-next {
-  border: 0;
   cursor: pointer;
-  font-size: 50px;
-  background-color: transparent;
-  color: rgba(0, 0, 0, 0.75);
-  padding: 0;
-}
-.slider .slider__controls-previous:focus,
-.slider .slider__controls-next:focus {
-  outline: none;
+  transition: transform 0.5s ease-in-out;
+  border: 2px solid #fff;
 }
 
-@media (max-width: 750px) {
-  .slider .slider__controls {
-    display: none;
+/* 3D positions for slides */
+#s1:checked~#slide4,
+#s2:checked~#slide5,
+#s3:checked~#slide1,
+#s4:checked~#slide2,
+#s5:checked~#slide3 {
+  height: 65%;
+  top: 19%;
+  right: 17%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.37);
+  transform: translate3d(-30%, 0, -200px);
+}
+
+#s1:checked~#slide5,
+#s2:checked~#slide1,
+#s3:checked~#slide2,
+#s4:checked~#slide3,
+#s5:checked~#slide4 {
+  right: 17%;
+  height: 85%;
+  top: 8%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(-15%, 0, -100px);
+}
+
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3,
+#s4:checked~#slide4,
+#s5:checked~#slide5 {
+  width: 66%;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3), 0 4px 4px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0, 0, 0);
+}
+
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide4,
+#s4:checked~#slide5,
+#s5:checked~#slide1 {
+  height: 85%;
+  left: 14%;
+  top: 8%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(15%, 0, -100px);
+}
+
+#s1:checked~#slide3,
+#s2:checked~#slide4,
+#s3:checked~#slide5,
+#s4:checked~#slide1,
+#s5:checked~#slide2 {
+  height: 65%;
+  top: 19%;
+  left: 17%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.37);
+  transform: translate3d(30%, 0, -200px);
+}
+
+/* ---------------------------------- */
+/*              Mobile                */
+/* ---------------------------------- */
+@media screen and (max-width: 1004px) {
+
+  nav a {
+    visibility: hidden;
+  }
+
+}
+
+/*  till here it is fix  */
+
+
+@media screen and (max-width: 1142px) {
+  .rightobj {
+
+    width: 65vw;
+    height: 57vw 657.78px;
+    /* transform: translate(-163px, -229px) scale(0.57); */
+
   }
 }
