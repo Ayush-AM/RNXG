@@ -8,12 +8,67 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  font-family: 'Iceland', sans-serif;
-  background-color: black;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-/* Header */
+body {
+  font-family: "Iceland", sans-serif;
+  background-color: black;
+  background-image: url(/RNXG/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: repeat-y;
+  padding: 1rem 2rem;
+  height: 600px;
+  max-width: 100vw;
+  overflow-x: hidden;
+  align-items: center;
+}
+
+.navbar {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0rem 2rem;
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+  background-image: url(rnxg\ logo.png);
+  background-size: cover;
+}
+
+.nav-items {
+  color: white;
+  display: flex;
+  gap: 3rem;
+  font-size: 1.5rem;
+  font-family: "Iceland", sans-serif;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.underline {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-color: #d7b5e6;
+  border-top: 3px solid #d7b5e6;
+  width: 100%;
+  height: 0.25rem;
+  margin-top: 2px;
+}
+
+/* Header
 header {
   display: flex;
   justify-content: space-between;
@@ -37,7 +92,7 @@ nav a.active {
   border-bottom: 3px solid #9D92CF;
   border-radius: 2px;
   padding-bottom: 4px;
-}
+} */
 
 .divider-img {
   width: 93%;
@@ -49,26 +104,26 @@ nav a.active {
   display: flex;
   flex-direction: row;
   background-color: black;
-  margin: 12px 68px;
+  /* margin: 12px 68px; */
   position: relative;
   height: 396px;
+  margin: 12px auto;
+  padding: 0 1rem;
+  max-width: 100%;
+  /* overflow-x: hidden; */
 }
 
 .left {
   flex: 1;
   display: flex;
   flex-direction: column;
-  /* padding: 0px 0px 0px 85px; */
-  /* align-items: center; */
+
 }
 
 .right {
   flex: 1;
   width: 100px;
-  /* overflow: visible; */
-
-  /* margin: 32px;
-  align-items: right; */
+  overflow: visible;
 }
 
 
@@ -90,12 +145,13 @@ nav a.active {
 
 .rightobj {
   width: 70vw;
-  height: 53vw;
-  
-   transform: translate(-97px, -223px) scale(0.57); /*he vprla tr issue jte responsive mdh khup */
+  height: 50vw;
+  transform: translate(-120px, -244px) scale(0.52);
+  position: absolute;
 }
 
 /* vh is fix size dimension never use is using responsiveness */
+
 
 /* Slider */
 [type=radio] {
@@ -184,26 +240,231 @@ nav a.active {
   transform: translate3d(30%, 0, -200px);
 }
 
-/* ---------------------------------- */
-/*              Mobile                */
-/* ---------------------------------- */
+
+/*              Mobile  responsive             */
+
 @media screen and (max-width: 1004px) {
 
-  nav a {
-    visibility: hidden;
+
+  .nav-items {
+    display: none;
+  }
+
+  header {
+    padding: 24px 12px 0px 24px;
   }
 
 }
 
-/*  till here it is fix  */
 
-
-@media screen and (max-width: 1142px) {
+@media screen and (max-width: 1182px) {
   .rightobj {
+    width: 70vw;
+    height: 62vw;
+    transform: translate(-149px, -274px) scale(0.51);
+  }
+}
 
-    width: 65vw;
-    height: 57vw 657.78px;
-    /* transform: translate(-163px, -229px) scale(0.57); */
 
+
+@media screen and (max-width: 1060px) {
+  .rightobj {
+    width: 70vw;
+    height: 63vw;
+    transform: translate(-149px, -238px) scale(0.51);
+  }
+}
+
+
+@media screen and (max-width: 981px) {
+  .rightobj {
+    width: 77vw;
+    height: 74vw;
+    transform: translate(-206px, -275px) scale(0.44);
+  }
+}
+
+
+
+@media screen and (max-width: 921px) {
+
+
+  .divider-img {
+    width: 100%;
+    height: 44px;
+    margin: 20px;
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 2px 20px;
+    position: relative;
+    max-height: 300px;
+    align-items: center;
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 245px;
+
+  }
+
+  .right {
+    display: none;
+  }
+
+
+  .left h1 {
+    color: #5352e8;
+    font-size: 5.75rem;
+    font-weight: 300;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .left p {
+    color: #f0bdf1;
+    font-size: 31px;
+    margin: 0px;
+    text-align: center;
+    width: 90%;
+  }
+
+
+  .rightobj {
+    display: none;
+
+  }
+
+
+  [type=radio] {
+    display: none;
+  }
+
+  #slider {
+    height: 23vw;
+    transform-style: preserve-3d;
+    width: 47vw;
+    transform: translate(-57px, 79px);
+
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  .navbar {
+    padding: 0rem 1.5px 0px 0px;
+  }
+
+
+  .left h1 {
+    font-size: 5.75rem;
+
+  }
+
+  .left p {
+    font-size: 1.5rem;
+
+  }
+
+  .right {
+    display: none;
+  }
+
+
+
+  #slider {
+    position: absolute;
+    left: 50%;
+    top: 82%;
+    transform: translateX(-50%);
+    width: 47vw;
+    height: 23vw;
+    transform-style: preserve-3d;
+
+  }
+
+}
+
+@media screen and (max-width: 642px) {
+  .logo {
+    height: 3rem;
+    width: 3rem;
+    background-image: url(rnxg\ logo.png);
+    background-size: cover;
+  }
+
+  .left h1 {
+    font-size: 5rem;
+  }
+
+  .left p {
+    font-size: 1.3rem;
+  }
+
+  .divider-img {
+    width: 90%;
+    height: 35px;
+  }
+
+  #slider {
+    position: absolute;
+    left: 50%;
+    top: 72%;
+    transform: translateX(-50%);
+    width: 47vw;
+    height: 23vw;
+
+    transform-style: preserve-3d;
+  }
+}
+
+/* Very small mobile devices */
+@media screen and (max-width: 451px) {
+  body {
+    padding: 0.5rem 0.5rem;
+    height: 100vh;
+  }
+
+  .logo {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-image: url(rnxg\ logo.png);
+    background-size: cover;
+  }
+
+  .divider-img {
+    width: 90%;
+    height: 25px;
+    margin: 10px;
+  }
+
+  .left {
+    max-height: 160px;
+  }
+
+  .left h1 {
+    font-size: 3.0rem;
+  }
+
+  .left p {
+    font-size: 1.2rem;
+  }
+
+  #slider {
+    top: 52%;
+    transform: translateX(-55%);
+    width: 47vw;
+    height: 23vw;
+    transform-style: preserve-3d;
   }
 }
