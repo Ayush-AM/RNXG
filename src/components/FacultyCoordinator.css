@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 18rem;
+  width: 20rem;
 }
 
 .mentor-image {
@@ -94,17 +94,18 @@
 
 @media (max-width: 1024px) {
   .mentor-title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .mentor-quote {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   .mentor-image {
-    width: 10rem;
+    width: 20rem;
   }
 }
 
 @media (max-width: 768px) {
+
   .mentor-card {
     flex-direction: column;
     justify-content: center;
@@ -116,13 +117,23 @@
   .mentor-wrapper {
     padding: 2rem 0.5rem;
   }
-  .mentor-title {
-    font-size: 1.3rem;
-  }
   .mentor-quote {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
+    text-align: justify;
+    width: 70vw;
+  }
+  .mentor-right{
+        align-items: center;
+    justify-content: center;
+  }
+    .mentor-title {
+  display: none;
+  font-size: 3rem;
   }
   .mentor-image {
-    width: 15rem;
+    width: 20rem;
+  }
+  .underline{
+    display: none;
   }
 }
