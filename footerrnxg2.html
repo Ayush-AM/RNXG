@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RNXG Footer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      letter-spacing: 2px;
+      text-align: left;
+    }
+
+    .footer {
+      background-color: #000;
+      color: #ffffff;
+      padding: 40px 20px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-left {
+      flex: 1;
+      min-width: 280px;
+      text-align: left;
+    }
+
+    .footer-left p {
+      color: #ccc;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .copyright {
+      font-size: 14px;
+      color: #aaa;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      margin-top: 150px;
+    }
+
+    .footer-right {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 20px;
+      transform: scale(1.15);
+    }
+
+    .footer-logo-circle {
+      position: relative;
+      width: 250px;
+      height: 250px;
+    }
+
+    .center-logo {
+      width: 140px;
+      height: 140px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+    .circle-icons {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    .circle-icons a {
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      pointer-events: auto;
+    }
+
+    .circle-icons a img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .circle-icons a img:hover {
+      transform: scale(1.2);
+    }
+
+    .circle-icons a:nth-child(1) {
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .circle-icons a:nth-child(2) {
+      top: 20%;
+      left: 85%;
+      transform: translate(-50%, -50%);
+    }
+
+    .circle-icons a:nth-child(3) {
+      top: 60%;
+      left: 100%;
+      transform: translate(-50%, -50%);
+    }
+
+    .circle-icons a:nth-child(4) {
+      top: 60%;
+      left: 0%;
+      transform: translate(-50%, -50%);
+    }
+
+    .circle-icons a:nth-child(5) {
+      top: 20%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+    }
+
+    .developed-by {
+      font-size: 14px;
+      color: #aaa;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-left {
+        text-align: center;
+      }
+
+      .footer-right {
+        margin-top: 30px;
+        transform: scale(1);
+      }
+
+      .footer-logo-circle {
+        width: 200px;
+        height: 200px;
+      }
+
+      .center-logo {
+        width: 100px;
+        height: 100px;
+      }
+
+      .circle-icons a {
+        width: 30px;
+        height: 30px;
+      }
+
+      .copyright,
+      .developed-by {
+        text-align: center;
+        
+      }
+    }
+  </style>
+</head>
+<body>
+
+<footer class="footer">
+  <div class="footer-content">
+    <!-- LEFT FOOTER -->
+    <div class="footer-left">
+      <h2>RNXG</h2>
+      <p>Robotics for Next Generation provides the best platform to work on different problem statements and to create the best solutions for them.</p>
+      <p class="copyright">© 2025 RNXG. All Rights Reserved.</p>
+    </div>
+
+    <!-- RIGHT FOOTER -->
+    <div class="footer-right">
+      <div class="footer-logo-circle">
+        <img src="https://avatars.githubusercontent.com/u/79443355?s=200&v=4" alt="RNXG Logo" class="center-logo" />
+        <div class="circle-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+        </div>
+      </div>
+      <p class="developed-by">Designed & Developed by Team RNXG</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
