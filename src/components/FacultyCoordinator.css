@@ -111,6 +111,7 @@
     align-items: center;
     padding: 1rem;
     width: 95%;
+    height: auto;
   }
   .mentor-wrapper {
     padding: 2rem 0.5rem;
@@ -122,6 +123,6 @@
     font-size: 0.95rem;
   }
   .mentor-image {
-    width: 7rem;
+    width: 15rem;
   }
 }

@@ -35,7 +35,7 @@ body::before {
   background-repeat: repeat-y;
   background-size: 100vw auto;
   background-position: left top;
-  opacity: 0.8; /* Adjust this value for more/less opacity */
+  opacity: 0.5; /* Adjust this value for more/less opacity */
   pointer-events: none;
   z-index: -1;
 }

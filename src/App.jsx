@@ -11,6 +11,17 @@ function App() {
     <>
       <div className="opacityContainer">
         <Navbar />
+        <div className="mediaContainer flex p-0 m-0">
+          <div className="polygon">
+          <div className="content">
+            <p>
+              THE <span className="highlight1">TEAM</span> THAT
+              <br />
+              MAKES IT <span className="highlight2">POSSIBLE</span>
+            </p>
+          </div>
+          </div>
+        </div>
         <FacultyCoordinator />
         <div className="card-grid">
           {members.map((member, index) => (
