@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RNXG Footer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      font-family: Orbitron;
+    }
+
+    .footer {
+      background-color: #000;
+      color: #ffffff;
+      padding: 40px 20px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end; /* Align left and right divs at bottom */
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-left {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .footer-left h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .footer-left p {
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+
+    .footer-right {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+
+    .social-icons {
+      margin-bottom: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 6px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      filter: brightness(0) invert(1);
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    .copyright, .developed-by {
+      font-size: 14px;
+      color: #999;
+    }
+
+    @media screen and (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-right {
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .footer-left {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h2>RNXG</h2>
+      <p>Robotics for Next Generation provides the best platform to work on different problem statements and to create the best solutions for them.</p>
+      <p class="copyright">© 2025 RNXG. All Rights Reserved.</p>
+    </div>
+    <div class="footer-right">
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" /></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" /></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" /></a>
+      </div>
+      <p class="developed-by">Designed & Developed by Team RNXG</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
