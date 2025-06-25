@@ -130,86 +130,12 @@ h1{
   margin-top: 0.5rem;
   font-size: 1.3rem;
   font-family: orbitron;
-color:white;
+  color:white;
 }
 
 /* responsive design */
-/* noramal screen */
-   @media screen and (max-width: 768px) {
-   .logo{
-    margin-top: 0.5rem;
-    margin-left: 2rem; 
-    height: 3rem;
-    width: 3rem;
-   }
-
-    .nav-items{
-     display: none;
-    }
-
-    .content{
-     margin-top: 0.1rem;
-     width: 35rem;
-     margin-left: 2rem;
-     font-size: 1.7rem;
-     padding-bottom: 0.5rem;
-    }
-
-    .heading{
-     margin-top: 1.5rem;
-     margin-left: 7rem;
-    }
-
-    h1{
-     width: 18rem;
-     height: 3.5rem;
-     font-size: 2.3rem;
-    padding-right: 1rem;
-    padding-left: 0.5rem;
-    }
-
-    .image{
-     height: 250px;
-     width: 250px;
-     margin-top: 0.2rem;
-    }
-
-    .one-image{
-      margin-left: 10rem;
-    }
-
-    .stats-container {
-        justify-content: center;
-        overflow: hidden;
-       margin-top: 1.4rem; 
-      height: 8rem;
-      width: 100%;
-      margin-left: 2rem;
-    }
-
-    .stat-box {
-        padding: 1rem;
-        border-right: 2px solid white;    
-       }
-    
-      .stat-number {
-        font-size: 2.2rem;
-      }
-    
-      .stat-label {
-        font-size: 0.8rem;
-        
-        
-      }
-    }
-
-
 /* mobile screen */
 @media screen and (max-width: 480px) {
-  *{
-    border: none;
-    padding: none;
-  }
     .logo{
         margin-top: 0.5rem;
         margin-left: 1rem; 
@@ -227,8 +153,9 @@ color:white;
         padding-bottom: 0.5rem;
     }
     .heading{
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         margin-left: 5rem;
+        margin-bottom: 1.5rem;
     }
     h1{
         width: 15rem;
@@ -246,8 +173,8 @@ color:white;
         margin-left: 8rem;
     }
     .wrapper{
-      margin-right:1rem;
-      width: 425px;
+        margin-right:1rem;
+        width: 425px;
     }
     .stats-container {
         justify-content: center;
@@ -256,7 +183,6 @@ color:white;
         height: 6rem;
         width: 40rem;
         margin-left: 1rem;
-        
     }
     .stat-box {
         padding: 0.5rem;
@@ -270,3 +196,107 @@ color:white;
     }
 }
 
+
+/* noramal screen */
+   @media (min-width: 481px) and (max-width: 768px) {
+   .logo{
+       margin-top: 0.5rem;
+       margin-left: 2rem; 
+       height: 2.5rem;
+       width: 2.5rem;
+    }
+    .nav-items{
+       display: none;
+    }
+    .content{
+       margin-top: 0.1rem;
+       width: 40rem;
+       margin-left: 2.5rem;
+       font-size: 1.7rem;
+       padding-bottom: 0.5rem;
+       width: 44rem;
+       height: 6rem;
+    }
+    .wrapper{
+        margin-right: 2rem;
+    }
+    .heading{
+       margin-top: 1rem;
+       margin-left: 13rem;
+       margin-bottom: 1rem;
+    }
+    h1{
+       width: 18rem;
+       height: 3.5rem;
+       font-size: 2.3rem;
+       padding-right: 1rem;
+       padding-left: 0.5rem;
+    }
+    .image{
+       height: 250px;
+       width: 250px;
+       margin-top: 0.2rem;
+    }
+    .one-image{
+       margin-left: 15rem;
+    }
+    .stats-container {
+       justify-content: center;
+       overflow: hidden;
+       margin-top: 1.4rem; 
+       height: 7.5rem;
+       width: 100%;
+       margin-left: 2rem;
+    }
+    .stat-box {
+       padding: 1rem;
+       border-right: 2px solid white;    
+       }
+    .stat-number {
+       font-size: 2.2rem;
+      }
+    .stat-label {
+      font-size: 0.8rem;
+    }
+    }
+
+
+/* tablet screen */
+ @media (min-width: 769px) and (max-width: 1024px) {
+    .logo{
+        margin-top: 0.5rem;
+        margin-left: 3.5rem; 
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .nav-items{
+        display: none;
+    }
+    .heading{
+        margin-top: 1.2rem;
+        margin-left: 18rem;
+        margin-bottom: 1.5rem;
+    }
+    .one-image{
+        margin-left: 20rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .image{
+        height: 320px;
+        width: 320px;
+        margin-top: 0.2rem;
+    }
+    .wrapper{
+        margin-right: 2rem;
+    }
+    .content{
+        font-size: 2.5rem;
+         width: 60rem;
+        padding-bottom: 0.5rem;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        margin-right: 4rem;
+    }
+    
+ } 
