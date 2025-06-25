@@ -1,9 +1,7 @@
-/* Make the wrapper take full width and align card to the right */
 .mentor-wrapper {
   justify-content: center;
   display: flex;
   padding-bottom: 2rem;
-  padding-top: 2rem;
 }
 
 .mentor-card {
@@ -15,19 +13,16 @@
   padding: 2rem;
   border-radius: 1.5rem;
   font-family: "Sofia Sans", sans-serif;
-
-  /* 3D Elegant Look */
-  background: rgba(255, 255, 255, 0.05); /* translucent glass */
-  backdrop-filter: blur(12px); /* glass blur */
-  border: 1px solid rgba(255, 255, 255, 0.15); /* subtle inner border */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15),
-    inset 0 0 0.5px rgba(255, 255, 255, 0.1); /* soft lift & depth */
+    inset 0 0 0.5px rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
-/* Optional: Hover lift */
 .mentor-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   box-shadow: 0 30px 40px rgba(0, 0, 0, 0.2),
     inset 0 0 1px rgba(255, 255, 255, 0.2);
 }
@@ -43,13 +38,10 @@
   aspect-ratio: 5/6;
   object-fit: cover;
   border-radius: 0.7rem;
-
-  /* 3D Elevation */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* outer shadow */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Optional hover effect */
 .mentor-image:hover {
   transform: scale(1.03);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
@@ -105,7 +97,6 @@
 }
 
 @media (max-width: 768px) {
-
   .mentor-card {
     flex-direction: column;
     justify-content: center;
@@ -117,23 +108,40 @@
   .mentor-wrapper {
     padding: 2rem 0.5rem;
   }
+
+  .mentor-name {
+    font-size: 2rem;
+  }
+
+  .mentor-role {
+    font-size: 1.3rem;
+  }
+
   .mentor-quote {
     font-size: 1.1rem;
     text-align: justify;
     width: 70vw;
   }
-  .mentor-right{
-        align-items: center;
+  .mentor-right {
+    align-items: center;
     justify-content: center;
   }
-    .mentor-title {
-  display: none;
-  font-size: 3rem;
+  .mentor-title {
+    display: none;
   }
   .mentor-image {
     width: 20rem;
   }
-  .underline{
+  .underline {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mentor-image {
+    width: 13rem;
+  }
+  .mentor-quote {
+    font-size: 0.7rem;
   }
 }

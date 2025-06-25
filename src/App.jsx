@@ -3,14 +3,12 @@ import React from "react";
 import "./App.css";
 import Card from "./components/Card";
 import FacultyCoordinator from "./components/FacultyCoordinator";
-import Navbar from "./components/Navbar";
 import members from "./data/clubMembers.json";
 
 function App() {
   return (
     <>
       <div className="opacityContainer">
-        <Navbar />
         <div className="mediaContainer flex p-0 m-0">
           <div className="polygon">
           <div className="content">
