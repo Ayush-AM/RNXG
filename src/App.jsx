@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="opacityContainer">
         <div className="mediaContainer flex p-0 m-0">
-          <div className="polygon">
+          <div data-aos="fade-down-right" className="polygon">
           <div className="content">
             <p>
               THE <span className="highlight1">TEAM</span> THAT

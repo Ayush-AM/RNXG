@@ -4,7 +4,7 @@ import "./FacultyCoordinator.css";
 const FacultyCoordinator = () => {
   return (
     <div className="mentor-wrapper">
-      <div className="mentor-card">
+      <div data-aos="fade-left" className="mentor-card">
         <div className="mentor-left">
           <img
             src="/images/BhaleraoSir.jpg"
