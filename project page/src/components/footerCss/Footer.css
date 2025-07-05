@@ -1,0 +1,243 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("https://res.cloudinary.com/ds1brunxe/raw/upload/v1738056842/Faster_Stroker_qee0xg.otf");
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  footer {
+    width: 100vw;
+    height: 40vh;
+    background-image: url("../footerCss/footer.avif");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  footer {
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    background-image: url("../footerCss/footer.avif");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    z-index: 1;
+  }
+  
+  footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Adjust opacity as needed */
+    z-index: -1;
+  }
+  
+  .contentaboveline {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-media {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+  }
+  
+  .social-link-2{
+    font-size: 2.2vw;
+    color: #B372CF;
+  }
+  
+  .social-link-2:hover{
+    color: white;
+    scale: 1.2;
+    transition: 0.2s;
+  }
+  
+  .footer-text {
+    font-size: 1.3vw;
+    width: 85%;
+  }
+  
+  .footer-title-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding-left: 5%;
+  }
+  .footer-title {
+    background: linear-gradient(to bottom, white 15%, #ffd1e3 50%, #B372CF 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 50%;
+    font-size: 3vw;
+    font-family: myFirstFont;
+    letter-spacing: 3px;
+  }
+  .includinglinecontent {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-divider {
+    width: 90%;
+  }
+  .contentbelowhr {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .belowlinleftside {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    font-size: 1vw;
+  }
+  .belowlinerightside {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 1vw;
+  }
+  .belowlinerightside a {
+    color: white;
+  }
+  @media (max-width: 700px) {
+    .contentaboveline {
+      flex-direction: column-reverse;
+      height: 50%;
+    }
+    .social-link-2{
+      font-size: 4.5vw;
+    }
+    .social-media {
+      width: 100%;
+      height: 100%;
+    }
+    .footer-title-container {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-title {
+      width: 90%;
+      font-size: 5vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-text {
+      width: 90%;
+      font-size: 2.2vw;
+      line-height: 20px;
+      text-align: center;
+    }
+    .contentbelowhr {
+      flex-direction: column;
+      height: 100%;
+    }
+    .belowlinleftside {
+      width: 100%;
+      font-size: 2vw;
+      align-items: center;
+      height: 100%;
+    }
+    .belowlinerightside {
+      width: 100%;
+      font-size: 2vw;
+      align-items: first baseline;
+      justify-content: center;
+      height: 100%;
+    }
+  
+    .footer-divider {
+      width: 80%;
+    }
+    
+  }
+  @media (max-width: 480px) {
+    .belowlinleftside {
+      font-size: 3vw;
+    }
+    .belowlinerightside {
+      font-size: 3vw;
+    }
+    .footer-title {
+      font-size: 9vw;
+    }
+    .footer-text {
+      font-size: 2.8vw;
+      line-height: 18px
+    }
+    .social-link-2{
+      font-size: 6vw;
+    }
+  
+  }
+  @media (min-width:701px) and (max-width:900px) {
+    
+    .footer-title{
+      font-size: 5vw;
+    }
+    .footer-text{
+      font-size: 1.5vw;
+    }
+   
+    .belowlinleftside{
+      font-size: 1.3vw;
+    }
+    .belowlinerightside{
+      font-size: 1.5vw;
+    }
+  }
+  
+  @media (min-width:901px) and (orientation:portrait) {
+    
+    .footer-title{
+      font-size: 4vw;
+    }
+    .footer-text{
+      font-size: 1.5vw;
+    }
+  .belowlinerightside{
+    font-size: 1.5vw;
+  }
+  .belowlinleftside{
+    font-size: 1.5vw;
+  }
+  
+  }
+  

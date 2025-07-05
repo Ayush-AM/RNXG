@@ -1,0 +1,221 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;    
+    background: rgb(54,23,100);
+    background: linear-gradient(90deg, rgba(54,23,100,0.8408613445378151) 0%, rgba(0,0,0,0.9332983193277311) 33%);
+    color: white;
+}
+
+.Project {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.Page1 {
+    background-image: url(./assets/page1.png);
+    background-size: 50rem;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.Page1 {
+    position: relative; /* Ensures child elements can be positioned absolutely */
+    overflow: visible;  /* Ensures ::after is not cut off */
+}
+
+.Page1::after {
+    content: "";
+    background-image: url(./assets/diamond.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45%;
+    height: 20%;
+    z-index: 1; /* Change from 1 to -1 so it stays behind content */
+    opacity: 1; /* Ensure it's fully visible */
+}
+
+
+.Title h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    font-weight: 750;
+    background: linear-gradient(to bottom, white 15%, #ffd1e3 50%, #B372CF 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Subtitle h3 {
+    font-size: 2.2rem;
+    background: linear-gradient(to bottom, white 15%, #ffd1e3 50%, #B372CF 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Page1 p {
+    border-radius: 40px;
+    box-shadow: 0 4px 8px #2b0860;
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 700px;
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.Button {
+    background: rgb(140, 69, 255);
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.Button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(140, 69, 255, 0.4);
+}
+
+.Button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.Button span {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .Page1 {
+        background-size: 50rem;
+        padding-left: 30px;
+        align-items: center;
+    }
+
+    .Page1::after {
+        width: 50%;
+        height: 15%;
+    }
+
+    .Title h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .Subtitle h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .Page1 p {
+        font-size: 1rem;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .Button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .spline-wrapper {
+        width: 100%;
+        height: 50%;
+        top: 50%;
+        right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .Page1 {
+        background-size: 30rem;
+        padding-left: 20px;
+    }
+
+    .Page1::after {
+        width: 60%;
+        height: 10%;
+    }
+
+    .Title h1 {
+        font-size: 2rem;
+    }
+
+    .Subtitle h3 {
+        font-size: 1.2rem;
+    }
+
+    .Page1 p {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .Button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+
+.spline-wrapper {
+    position: absolute;
+    right: -10rem;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    display: none; /* Hide by default */
+}
+
+@media (min-width: 1300px) {
+    .spline-wrapper {
+        display: block; /* Show only for screens 1300px and above */
+    }
+}
+
+.spline-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.spline-container spline-viewer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
