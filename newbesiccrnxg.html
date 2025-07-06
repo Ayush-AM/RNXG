@@ -1,0 +1,176 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RNXG Footer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  background-color: #0d0d0d;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+main h1 {
+  font-family: Orbitron, sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: Orbitron, sans-serif;
+}
+
+.footer {
+  background-color: #000;
+  color: #ffffff;
+  padding: 40px 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-left h2 {
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.footer-left p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin: 0 6px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.social-icons a:nth-child(1) img { animation-delay: 0.2s; }
+.social-icons a:nth-child(2) img { animation-delay: 0.4s; }
+.social-icons a:nth-child(3) img { animation-delay: 0.6s; }
+.social-icons a:nth-child(4) img { animation-delay: 0.8s; }
+.social-icons a:nth-child(5) img { animation-delay: 1s; }
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.copyright, .developed-by {
+  font-size: 14px;
+  color: #999;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right {
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+</style>
+</head>
+<body>
+
+<main>
+  <h1>Welcome to RNXG</h1>
+  <p>
+    Robotics for Next Generation is dedicated to providing innovative platforms for learning, experimenting, and creating solutions to complex problems.  
+    Join us in exploring the future of robotics.
+  </p>
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h2>RNXG</h2>
+      <p>Robotics for Next Generation provides the best platform to work on different problem statements and to create the best solutions for them.</p>
+      <p class="copyright">© 2025 RNXG. All Rights Reserved.</p>
+    </div>
+    <div class="footer-right">
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" /></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" /></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" /></a>
+      </div>
+      <p class="developed-by">Designed & Developed by Team RNXG</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
