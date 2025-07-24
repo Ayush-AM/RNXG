@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mission & Vision</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden; /* no scrolling */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('new.png');
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+      position: relative;
+    }
+
+    .wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 1200px;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .section {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .robot-img {
+      position: absolute;
+      top: -30px;
+      left: -50px;
+      width: 370px;
+    }
+
+    .graph-img {
+      position: absolute;
+      bottom: -40px;
+      right: -80px;
+      width: 400px;
+    }
+
+    .img-tag {
+      width: 300px;
+      margin-bottom: 20px;
+      margin-right: 400px;
+    }
+
+    .img-tag1 {
+      width: 300px;
+      margin-bottom: 20px;
+      margin-left: 400px;
+      margin-right: auto;
+    }
+
+    .text-box,
+    .text-box1 {
+      max-width: 700px;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .mission-box {
+      text-align: center;
+      padding-left: 500px;
+    }
+
+    .vision-box {
+      text-align: center;
+      padding-right: 500px;
+    }
+
+    /* ✅ Responsive Section */
+    @media (max-width: 768px) {
+      .wrapper {
+        padding: 10px;
+        transform: translate(-50%, -50%);
+      }
+
+      .text-box,
+      .text-box1 {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      .img-tag,
+      .img-tag1 {
+        width: 70%;
+        margin: 0 auto 15px auto;
+      }
+
+      .robot-img,
+      .graph-img {
+        display: none;
+      }
+
+      .mission-box,
+      .vision-box {
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Mission Section -->
+    <div class="section">
+      <img src="robot.png" alt="robot" class="robot-img">
+      <div class="mission-box">
+        <img src="mission.png" alt="Mission Title" class="img-tag1">
+        <p class="text-box1">
+          To increase enthusiasm & knowledge towards robotics by providing hands-on & multidisciplinary collaborative experience in mechanics, electronics, designing & programming, with all departments working in symphony to create marvellous projects.
+        </p>
+      </div>
+    </div>
+
+    <!-- Vision Section -->
+    <div class="section">
+      <img src="graph.png" alt="graph" class="graph-img">
+      <div class="vision-box">
+        <img src="vision.png" alt="Vision Title" class="img-tag">
+        <p class="text-box">
+          We provide an open platform for our community in the institute who wish to advance in the technological world. We integrate technology to tackle real-world challenges.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
