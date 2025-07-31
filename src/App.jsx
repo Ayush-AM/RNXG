@@ -4,13 +4,19 @@ import "./App.css";
 import Card from "./components/Card";
 import FacultyCoordinator from "./components/FacultyCoordinator";
 import members from "./data/clubMembers.json";
+import Mission from "./components/mission";
+import Whoarewe from "./components/whoarewe";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
+    <Navbar />
+    <Whoarewe />
+    <Mission />
       <div className="opacityContainer">
         <div className="mediaContainer flex p-0 m-0">
-          <div data-aos="fade-down-right" className="polygon">
+          <div className="polygon">
           <div className="content">
             <p>
               THE <span className="highlight1">TEAM</span> THAT
@@ -36,5 +42,4 @@ function App() {
     </>
   );
 }
-
 export default App;

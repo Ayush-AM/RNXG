@@ -2,9 +2,12 @@ import React from "react";
 import "./FacultyCoordinator.css";
 
 const FacultyCoordinator = () => {
+
+  console.log("reached facultycoordinator");
+
   return (
     <div className="mentor-wrapper">
-      <div data-aos="fade-left" className="mentor-card">
+      <div  className="mentor-card">
         <div className="mentor-left">
           <img
             src="/images/BhaleraoSir.jpg"

@@ -4,6 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 0rem 5rem 2rem 2rem;
 }
 
 .logo{

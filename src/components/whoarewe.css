@@ -1,0 +1,409 @@
+/* Keep the box-sizing rule */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modify body styles */
+body {
+    background-size: cover;
+    background-image: url(/milad-fakurian-G5fdwRVoi4Q-unsplash\ 3.png);
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 3rem;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.content{
+    height: 8rem;
+    width: 40rem;
+    font-size: 1.5rem;
+    font-family: "inclusive", sans-serif;
+    margin-left: 8rem;
+    margin-top: 2.5rem;
+    padding-bottom: 6rem;
+}
+
+.heading{
+    font-size: 1.5rem;
+    font-family: orbitron;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+}
+
+h1{
+    height: 4.5rem;
+    width: 25rem;
+    background-image: url(/Rectangle\ 862.png),url(/Rectangle\ 861.png) ;
+    background-position: (left center, right center);
+    background-size: 100% 100%, 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.image{
+    height: 20em;
+    width: 20rem;
+    background-image: url(/image\ 20.png);
+    background-size: cover;
+    margin-right: 4rem;
+    margin-top: 1rem;
+}
+
+.one-image{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 4rem;
+    width: 100%;
+}
+
+.left{
+    margin: 0;
+    padding: 0;
+}
+.stats-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure stats stay in a single row */
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+    min-height: 8rem;
+    background-image: url(/Rectangle\ 869.png);
+    background-size: cover;
+    border-radius: 50px;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    overflow-y: hidden;
+    padding: 0.5rem 0;
+}
+
+.stat-box {
+    flex: 1 0 auto; /* Don't allow shrinking below content size */
+    min-width: min-content; /* Ensure content doesn't get cut off */
+    padding: 1rem;
+    text-align: center;
+    border-right: 2.5px solid;
+    border-image: linear-gradient(to top,black,white,black)1;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.stat-box:last-child {
+    border-right: none;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-family: "sofia sans";
+    color: white;
+}
+
+.stat-label {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-family: orbitron;
+    color: white;
+}
+
+/* responsive design */
+/* mobile screen */
+@media screen and (max-width: 480px) {
+    .logo{
+        margin-top: 0.5rem;
+        margin-left: 1rem; 
+        height: 2.5rem;
+        width: 2.5rem;
+    } 
+    .nav-items{
+        display: none;
+    }
+    .content{
+        margin-top: 0.1rem;
+        width: 26rem;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .heading{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    h1{
+        width: 12rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        background-size: contain;
+        background-position: center;
+    }
+    .image{
+        height: 200px;
+        width: 200px;
+        margin-top: 0.2rem;
+    }
+    .one-image{
+        margin-left: 8rem;
+    }
+    .wrapper{
+        margin-right:1rem;
+        width: 100vw;
+    }
+    .stats-container {
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 1.4rem; 
+        height: 6rem;
+        width: 100vw;
+        margin-left: 0;
+    }
+    .stat-box {
+        padding: 0.5rem;
+        border-right: 1px solid white;    
+    }
+    .stat-number {
+        font-size: 1rem;
+    }
+    .stat-label {
+        font-size: 0.7rem;
+    }
+}
+
+
+/* tablet screen - small */
+@media (min-width: 481px) and (max-width: 768px) {
+   .logo{
+       margin-top: 0.5rem;
+       margin-left: 2rem; 
+       height: 2.5rem;
+       width: 2.5rem;
+    }
+    .nav-items{
+       display: none;
+    }
+    .content{
+       margin-top: 0.1rem;
+       width: 90%;
+       margin-left: 2.5rem;
+       font-size: 1.5rem;
+       padding-bottom: 0.5rem;
+       height: auto;
+    }
+    .wrapper{
+        margin-right: 0;
+        width: 100%;
+    }
+    .heading{
+       margin-top: 1rem;
+       margin-left: 5rem;
+       margin-bottom: 1rem;
+    }
+    h1{
+       width: 15rem;
+       height: 3rem;
+       font-size: 1.7rem;
+       padding-right: 0.5rem;
+       padding-left: 0.5rem;
+       background-size: contain;
+       background-position: center;
+    }
+    .image{
+       height: 250px;
+       width: 250px;
+       margin-top: 0.2rem;
+    }
+    .one-image{
+       margin-left: 0;
+       justify-content: center;
+       width: 100%;
+    }
+    .stats-container {
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-top: 1rem;
+        height: auto;
+        min-height: 6rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5rem 0;
+    }
+    .stat-box {
+        flex: 0 0 auto;
+        min-width: 100px;
+        padding: 0.8rem;
+        border-right: 2px solid white;
+    }
+    .stat-number {
+        font-size: 2rem;
+    }
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    .stat-box:nth-child(2n) {
+        border-right: 1px solid white; /* Restore borders for all except last */
+    }
+    .stat-box:last-child {
+        border-right: none;
+    }
+    .stat-box:nth-child(3), .stat-box:nth-child(4) {
+        border-bottom: none;
+    }
+    .stat-number {
+        font-size: 1.2rem;
+    }
+    .stat-label {
+        font-size: 0.6rem;
+    }
+}
+
+
+/* tablet screen - large */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo{
+        margin-top: 0.5rem;
+        margin-left: 3.5rem; 
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .nav-items{
+        display: flex;
+        gap: 2rem;
+        margin-left: 2rem;
+        font-size: 1.2rem;
+    }
+    .heading{
+        margin-top: 1.2rem;
+        margin-left: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .one-image{
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .image{
+        height: 320px;
+        width: 320px;
+        margin-top: 0.2rem;
+    }
+    .wrapper{
+        margin-right: 0;
+        width: 100%;
+    }
+    .content{
+        font-size: 1.8rem;
+        width: 90%;
+        padding-bottom: 0.5rem;
+        margin-left: 3.5rem;
+        margin-top: 1rem;
+        margin-right: 3.5rem;
+        height: auto;
+    }
+    .stats-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 7rem;
+    }
+    .stat-box {
+        padding: 1rem;
+    }
+    .stat-number {
+        font-size: 2.2rem;
+    }
+    .stat-label {
+        font-size: 0.9rem;
+    }
+}
+
+/* large screens */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .nav-items {
+        gap: 3rem;
+        margin-left: 5rem;
+    }
+    .wrapper {
+        margin-right: 2rem;
+    }
+    .content {
+        width: 35rem;
+    }
+    .stats-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 8rem;
+    }
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    .stat-label {
+        font-size: 1rem;
+    }
+}
+
+/* extra large screens */
+@media (min-width: 1441px) {
+    .nav-items {
+        gap: 5rem;
+        margin-left: 10rem;
+    }
+    .content {
+        width: 45rem;
+    }
+    .stats-container {
+        width: 90%;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.stat-box {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  border-right: 2.5px solid;
+  border-image: linear-gradient(to top,black,white,black)1;
+}
+
+.stat-box:last-child {
+  border-right: none;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-family: "sofia sans";
+  color: white;
+}
+
+.stat-label {
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  font-family: orbitron;
+  color:white;
+}

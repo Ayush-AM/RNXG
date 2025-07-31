@@ -1,12 +1,13 @@
 import "./Card.css";
 import { FaLinkedin } from "react-icons/fa";
 
+
 const Card = ({ photo, name, position, linkedin }) => {
+
+
+
   return (
     <div
-      data-aos="fade-right"
-      data-aos-offset="100"
-      data-aos-easing="ease-in"
       className="card"
     >
       <div className="card-image-wrapper">
