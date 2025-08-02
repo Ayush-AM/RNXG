@@ -1,0 +1,124 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      min-height: 100vh;
+      width: 100%;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black; 
+      background-image: url('new.png');
+      background-size: 100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+      position: relative;
+    }
+
+    .wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 1200px;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .section {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .robot-img {
+      position: absolute;
+      top: -30px;
+      left: -50px;
+      width: 370px;
+    }
+
+    .graph-img {
+      position: absolute;
+      bottom: -40px;
+      right: -80px;
+      width: 400px;
+    }
+
+    .img-tag {
+      width: 300px;
+      margin-bottom: 20px;
+      margin-right: 400px;
+    }
+
+    .img-tag1 {
+      width: 300px;
+      margin-bottom: 20px;
+      margin-left: 400px;
+      margin-right: auto;
+    }
+
+    .text-box,
+    .text-box1 {
+      max-width: 700px;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .mission-box {
+      text-align: center;
+      padding-left: 500px;
+    }
+
+    .vision-box {
+      text-align: center;
+      padding-right: 500px;
+    }
+
+  
+    @media (max-width: 768px) {
+      .wrapper {
+        padding: 10px;
+        transform: translate(-50%, -50%);
+      }
+
+
+      .text-box,
+      .text-box1 {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+
+      .img-tag,
+      .img-tag1 {
+        width: 70%;
+        margin: 0 auto 15px auto;
+      }
+
+      .robot-img,
+      .graph-img {
+        display: none;
+      }
+
+
+      .mission-box,
+      .vision-box {
+        padding: 0 10px;
+      }
+    }
