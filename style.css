@@ -1,0 +1,159 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-image: url('image\ 36.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+/* Main header section layout */
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 39px;
+    background: transparent;
+    /* keep transparent if you're using body background-image */
+}
+
+/* Left: Text part */
+.header-text {
+    flex: 1;
+    min-width: 300px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.header-title h1 {
+    font-size: 7.5rem;
+    /* font-weight: bold; */
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Iceland', sans-serif;
+    font-weight: normal;
+}
+
+.header-description {
+
+    font-size: 1.6rem;
+    line-height: 1.6;
+    max-width: 640px;
+    font-weight: normal;
+    font-family: 'ICELAND';
+      margin: 0 auto; /* center itself in the parent */
+}
+
+.divider-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.divider-icon img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+/* Right: Image part */
+.header-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+}
+
+.img-box{
+    display: flex;
+    margin-left: 10px;
+    /* width: 68%; */
+    align-items: center;
+    justify-content: center;
+}
+
+.header-img img {
+    max-width: 68%;
+    height: auto;
+}
+
+
+
+/* Achievement Sections */
+.achievement-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.achievement-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #ffcc70;
+}
+
+.achievement-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.image-box {
+    width: 200px;
+    height: 120px;
+    background-color: #444;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    font-size: 0.9rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Description */
+.description {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    color: #aaa;
+}
+
+/* Slider Placeholder */
+.slider-section {
+    height: 300px;
+    margin: 50px 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px dashed #666;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-style: italic;
+}
+
+/* Footer Placeholder */
+.footer-placeholder {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #444;
+    text-align: center;
+    color: #777;
+}
