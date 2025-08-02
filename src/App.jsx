@@ -15,14 +15,9 @@ function App() {
     <Whoarewe />
     <Mission />
       <div className="opacityContainer">
-        <div className="mediaContainer flex p-0 m-0">
-          <div className="polygon">
-          <div className="content">
-            <p>
-              THE <span className="highlight1">TEAM</span> THAT
-              <br />
-              MAKES IT <span className="highlight2">POSSIBLE</span>
-            </p>
+        <div className="mediaContainer flex items-center justify-center p-0 m-0 w-full">
+          <div className="content flex items-center justify-center w-full">
+              <img className="teamthat block w-full m-0" src='teamthat.png'/>
           </div>
           </div>
         </div>
@@ -38,7 +33,6 @@ function App() {
             />
           ))}
         </div>
-      </div>
     </>
   );
 }

@@ -1,5 +1,4 @@
 #root {
-
   margin: 0 auto;
   padding: 1rem;
   padding-top: 0;
@@ -17,85 +16,57 @@ html::-webkit-scrollbar {
   scrollbar-width: none;  
 }
 
-.polygon{
-  display: flex;
-  margin: 1rem;
-  position: relative;
-  background-image: url(/images/polygonBorder.png);
-  width: 27vw;
-  min-height: 15vh;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left top;
-  align-items: start;
-  justify-content: start;
-  padding-left: 3rem;
-  clip-path: polygon(0,0, 500px,0, 600px,60px, 600px,120px, 70px,120px, 0,70px);
-}
-
 .content {
   display: flex;
   padding-top: 1rem;
   font-family: 'Orbitron', sans-serif;
   font-size: 1.5rem;
   color: white;
+
 }
 
-.highlight1 {
-  color: #a172ff;
-}
-
-.highlight2 {
-  color: #c340f5;
+.teamthat {
+  width: 27.2rem; 
+  height: 9.3rem;
+  align-items: center;
 }
 
 @media (max-width: 1024px){
 
   .mediaContainer{
     display: flex;
-    align-items: start;
     justify-content: center;
   }
-  .polygon{
-    width: 50vw;
-    font-size: 1.5rem;
-    align-items:start;
-    justify-content: center;
-    padding-top: 1.5rem;
-      min-height: 20vh;
-    padding-left: 0%;
-  }
-  
+
 }
 
 @media (max-width: 768px) {
   .mediaContainer{
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
   }
-  .polygon{
-    width: 60vw;
-    align-items:start;
-    justify-content: center;
-    padding-top: 0.6rem;
-  }
+
+  .teamthat {
+  width: 20.3rem; 
+  height: 7rem;
+  align-items: center;
+}
+
   .content{
     font-size: 1.7rem;
   }
 }
 
 @media (max-width: 480px) {
-  .polygon{
-    width: 90vw;
-    font-size: 1.1rem;
-    align-items:start;
-    justify-content: start;
-    padding: 0rem 1rem;
-  }
-
-    .content{
+  .content{
     font-size: 1.7rem;
   }
+  
+.teamthat {
+  width: 13.6rem; 
+  height: 4.6rem;
+  align-items: center;
+}
 }
 
