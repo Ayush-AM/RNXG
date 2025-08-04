@@ -1,0 +1,434 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-image: url('image\ 36.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+/* Main header section layout */
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 39px;
+    align-content: center;
+    min-height: 85vh;
+}
+
+/* Left: Text part */
+.header-text {
+    flex: 1.6;
+    min-width: 300px;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    row-gap: 39px;
+
+}
+
+.header-title h1 {
+    font-size: 8.6rem;
+    font-family: 'Iceland', sans-serif;
+    font-weight: normal;
+}
+
+.header-description {
+
+    font-size: 1.7rem;
+    line-height: 1.7;
+    max-width: 640px;
+    font-weight: normal;
+    font-family: 'ICELAND';
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.divider-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.divider-icon img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+/* Right: Image part */
+.header-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+}
+
+.img-box {
+    display: flex;
+    margin-left: 10px;
+    /* width: 68%; */
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img img {
+    max-width: 90%;
+    height: auto;
+}
+
+/* achivement title */
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    min-height: 36vh;
+    max-width: 100%
+}
+
+.Acheivement-Title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 40px;    */
+    min-width: 145vh;
+    z-index: 0;
+    min-height: 33vh;
+}
+
+.Acheivement-Title img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+
+    /* z-index: 0; */
+}
+
+.Acheivement-Title h2 {
+    position: relative;
+    font-size: 3.6rem;
+    font-family: Italiana, serif;
+    z-index: 1;
+    min-height: auto;
+    margin: 5px;
+    font-weight: lighter;
+
+}
+
+
+/* SIH Section */
+.event-section {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 0px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    gap: 46px;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 15vh; */
+
+}
+
+
+.glow-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4px;
+    /* width: 100%; */
+    background: linear-gradient(to right, #00000000, white 50%, #00000000);
+    filter: blur(0.7px);
+    margin: 15vh;
+}
+
+
+.event-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+.sih-icon {
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+
+}
+
+/* .event-header h2 {
+    border-bottom-color: #ffffff;
+} */
+
+.event-header h2 {
+
+    font-family: 'Iceland', sans-serif;
+    font-size: 4.0em;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    display: inline-block;
+    border-bottom: 2px solid #fff !important;
+    color: #fff !important;
+    background: transparent !important;
+    opacity: 1 !important;
+
+
+}
+
+/* Slider Container */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+/* List Container */
+.list {
+    height: 220px;
+    position: relative;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual Slide */
+.list li {
+    list-style-type: none;
+    width: 200px;
+    height: 200px;
+    opacity: 0.5;
+    position: absolute;
+    border-radius: 15px;
+    background: #9C89B8;
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transform-origin: center center;
+}
+
+/* No transition for slides jumping from far positions */
+.list li.no-transition {
+    transition: none;
+}
+
+/* Slide Images */
+.list li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Active Slide (Center) */
+.list .act {
+    opacity: 1;
+    z-index: 10;
+    transform: translateX(0) scale(1.15);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5), 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+/* Previous Slide (Left) */
+.list .prev {
+    transform: translateX(-240px) scale(0.8);
+    z-index: 5;
+    opacity: 0.7;
+    filter: brightness(0.8);
+}
+
+/* Next Slide (Right) */
+.list .next {
+    transform: translateX(240px) scale(0.8);
+    z-index: 5;
+    opacity: 0.7;
+    filter: brightness(0.8);
+}
+
+/* Hidden slides (slides that are not prev, act, or next) */
+.list li:not(.act):not(.prev):not(.next) {
+    opacity: 0;
+    z-index: 1;
+    transform: translateX(0) scale(0.6);
+    pointer-events: none;
+    filter: blur(2px);
+}
+
+/* Swipe Area (Invisible touch area) */
+.swipe {
+    width: 600px;
+    height: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 10;
+}
+
+/* Hover effects */
+.list .prev:hover,
+.list .next:hover {
+    opacity: 0.9;
+    transform: translateX(-240px) scale(0.85);
+    filter: brightness(1);
+}
+
+.list .next:hover {
+    transform: translateX(240px) scale(0.85);
+}
+
+.list .act img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .slider-wrapper {
+        height: 230px;
+    }
+
+    .list {
+        width: 500px;
+    }
+
+    .list li {
+        width: 160px;
+        height: 160px;
+    }
+
+    .list .act {
+        transform: translateX(0) scale(1.1);
+    }
+
+    .list .prev {
+        transform: translateX(-190px) scale(0.75);
+    }
+
+    .list .next {
+        transform: translateX(190px) scale(0.75);
+    }
+
+    .list .prev:hover {
+        transform: translateX(-190px) scale(0.8);
+    }
+
+    .list .next:hover {
+        transform: translateX(190px) scale(0.8);
+    }
+
+    .swipe {
+        width: 400px;
+    }
+}
+
+
+/* Add subtle border to active slide */
+.list .act {
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Sliding animation keyframes for smooth entrance */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-400px) scale(0.6);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-240px) scale(0.8);
+        opacity: 0.7;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(400px) scale(0.6);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(240px) scale(0.8);
+        opacity: 0.7;
+    }
+}
+
+@keyframes slideToCenter {
+    from {
+        opacity: 0.7;
+    }
+
+    to {
+        transform: translateX(0) scale(1.15);
+        opacity: 1;
+    }
+}
+
+
+.glass-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 149vh;
+    height: 24vh;
+    background-color: #ffffff00;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 48px;
+    border: none;
+    box-shadow: inset 0px 6px 20px 0px rgb(97 7 162), inset 0px 2px 17px 0px rgb(85 6 142 / 87%), inset 0 0px 0px 0px rgb(108 4 148 / 85%), inset 0px 11px 20px 0px rgb(45 0 111 / 90%);
+    padding: 25px 35px;
+
+}
+
+
+
+.glass-card p {
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 2.0;
+}
+
+
+
+
+@media (max-width: 1024px) {}
+
+
+@media (max-width: 768px) {}
+
+
+@media (max-width: 480px) {}

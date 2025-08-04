@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements | RNXG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Main Header -->
+    <section class="main-header">
+        <div class="header-text">
+            <div class="header-title">
+                <h1>Achievements</h1>
+            </div>
+
+            <div class="header-description">
+
+                <div class="divider-icon">
+                    <img src="Group 1.png" alt="divider icon">
+                </div>
+
+                <div>
+                    <p>We take pride in solving real-world problemsthrough innovation and dedication. Our achievements
+                        reflect our hard work and creativity. Each milestone motivates us to continue making a positive
+                        impact
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="header-img">
+            <div class="img-box">
+                <img src="image.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------- -->
+    <div class="title-container">
+        <div class="Acheivement-Title">
+            <img src="Mask group.png" alt="">
+            <h2>Achievements of Team RNXG</h2>
+
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------- -->
+
+    <section class="event-section">
+        <div class="event-header">
+            <img src="sih.png" alt="SIH Icon" class="sih-icon" />
+            <h2>SMART INDIA HACKATHON</h2>
+        </div>
+
+        <!-- Slider Component -->
+        <div class="slider-wrapper">
+            <ul class="list">
+                <li>
+                    <img src="team vikrama sih 2.png" alt="Slide 1">
+                </li>
+                <li>
+                    <img src="image 9.png" alt="Slide 2">
+                </li>
+                <li>
+                    <img src="image 11.png" alt="Slide 3">
+                </li>
+            </ul>
+            <div class="swipe"></div>
+        </div>
+
+        <div class="glass-card">
+            <p>
+
+                The members of RNXG have actively participated in Smart India Hackathon, showcasing their talent and
+                dedication. They secured multiple wins and earned impressive cash prizes through their innovative
+                solutions. This spirit of excellence is now being carried forward by their juniors. Together, they
+                continue to uphold the legacy of RNXG with pride and consistency.
+            </p>
+        </div>
+    </section>
+
+    <div class="glow-divider"></div>
+
+    <section class="event-section">
+        <div class="event-header">
+            <img src="image_7-removebg-preview (1) 2.png" alt="SIH Icon" class="sih-icon" />
+            <h2>ROBOFEST</h2>
+        </div>
+
+        <!-- Slider Component -->
+        <div class="slider-wrapper">
+            <ul class="list">
+                <li>
+                    <img src="team vikrama sih 2.png" alt="Slide 1">
+                </li>
+                <li>
+                    <img src="image 9.png" alt="Slide 2">
+                </li>
+                <li>
+                    <img src="image 11.png" alt="Slide 3">
+                </li>
+            </ul>
+            <div class="swipe"></div>
+        </div>
+
+        </div>
+
+        <div class="glass-card">
+            <p>
+
+                The members of RNXG have actively participated in Smart India Hackathon, showcasing their talent and
+                dedication. They secured multiple wins and earned impressive cash prizes through their innovative
+                solutions. This spirit of excellence is now being carried forward by their juniors. Together, they
+                continue to uphold the legacy of RNXG with pride and consistency.
+            </p>
+        </div>
+    </section>
+
+
+    <div class="glow-divider"></div>
+
+
+    <section class="event-section">
+        <div class="event-header">
+            <!-- <img src="sih.png" alt="SIH Icon" class="sih-icon" /> -->
+            <h2>E-YANTRA</h2>
+        </div>
+
+       <!-- Slider Component -->
+        <div class="slider-wrapper">
+            <ul class="list">
+                <li>
+                    <img src="team vikrama sih 2.png" alt="Slide 1">
+                </li>
+                <li>
+                    <img src="image 9.png" alt="Slide 2">
+                </li>
+                <li>
+                    <img src="image 11.png" alt="Slide 3">
+                </li>
+            </ul>
+            <div class="swipe"></div>
+        </div>
+
+        <div class="glass-card">
+            <p>
+
+                The members of RNXG have actively participated in Smart India Hackathon, showcasing their talent and
+                dedication. They secured multiple wins and earned impressive cash prizes through their innovative
+                solutions. This spirit of excellence is now being carried forward by their juniors. Together, they
+                continue to uphold the legacy of RNXG with pride and consistency.
+            </p>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <script>
+        // Clean 3-Image Slider Script
+        document.querySelectorAll('.slider-wrapper').forEach(wrapper => {
+            const slides = wrapper.querySelectorAll('.list li');
+            const swipeArea = wrapper.querySelector('.swipe');
+            let currentIndex = 0; // Start with first slide
+            let previousPositions = {}; // Track previous positions
+
+            function updateSlider() {
+                const newPositions = {};
+
+                slides.forEach((slide, index) => {
+                    const prevPosition = previousPositions[index];
+                    let newPosition;
+
+                    if (index === currentIndex) {
+                        newPosition = 'act';
+                    } else if (index === (currentIndex - 1 + slides.length) % slides.length) {
+                        newPosition = 'prev';
+                    } else if (index === (currentIndex + 1) % slides.length) {
+                        newPosition = 'next';
+                    } else {
+                        newPosition = 'hidden';
+                    }
+
+                    newPositions[index] = newPosition;
+
+                    // Check if slide is jumping from far position (prev to next or next to prev)
+                    const isJumping = (prevPosition === 'prev' && newPosition === 'next') ||
+                        (prevPosition === 'next' && newPosition === 'prev') ||
+                        (prevPosition === 'hidden' && (newPosition === 'prev' || newPosition === 'next'));
+
+                    // Remove transitions temporarily for jumping slides
+                    if (isJumping) {
+                        slide.classList.add('no-transition');
+                    }
+
+                    // Clear all classes and apply new position
+                    slide.className = '';
+                    if (isJumping) {
+                        slide.classList.add('no-transition');
+                    }
+
+                    if (newPosition === 'act') {
+                        slide.classList.add('act');
+                    } else if (newPosition === 'prev') {
+                        slide.classList.add('prev');
+                    } else if (newPosition === 'next') {
+                        slide.classList.add('next');
+                    }
+
+                    // Re-enable transitions after a brief delay
+                    if (isJumping) {
+                        setTimeout(() => {
+                            slide.classList.remove('no-transition');
+                        }, 50);
+                    }
+                });
+
+                previousPositions = newPositions;
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateSlider();
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateSlider();
+            }
+
+            // Initialize slider
+            updateSlider();
+
+            // Click events
+            wrapper.addEventListener('click', (e) => {
+                const clickedSlide = e.target.closest('li');
+                if (clickedSlide && clickedSlide.classList.contains('next')) {
+                    nextSlide();
+                } else if (clickedSlide && clickedSlide.classList.contains('prev')) {
+                    prevSlide();
+                }
+            });
+
+            // Touch/swipe events
+            const hammer = new Hammer(swipeArea);
+            hammer.on('swipeleft', nextSlide);
+            hammer.on('swiperight', prevSlide);
+
+            // Auto-slide every 4 seconds
+            setInterval(nextSlide, 4000);
+        });
+    </script>
+
+</body>
+
+</html>
