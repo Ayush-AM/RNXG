@@ -16,7 +16,7 @@ function App() {
     <Mission />
       <div className="opacityContainer">
         <div className="mediaContainer flex items-center justify-center p-0 m-0 w-full">
-          <div className="content flex items-center justify-center w-full">
+          <div className="content1 flex items-center justify-center w-full">
               <img className="teamthat block w-full m-0" src='teamthat.png'/>
           </div>
           </div>

@@ -12,7 +12,7 @@ html, body {
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('new.png');
+  /* background-image: url('new.png'); */
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body {
 }
 
 .mission-wrapper {
-  max-width: 1200px;
+  max-width: 80vw;
   width: 100%;
   margin: 0 auto;
   padding: 20px;
@@ -38,7 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 30px 0;
   width: 100%;
 }
 
@@ -101,7 +101,7 @@ body {
 
   .text-box,
   .text-box1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     text-align: center;
     max-width: 100%;
@@ -131,6 +131,10 @@ body {
 @media (min-width: 481px) and (max-width: 768px) {
   .mission-wrapper {
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .section {
@@ -139,8 +143,10 @@ body {
 
   .text-box,
   .text-box1 {
+
     font-size: 1.1rem;
-    max-width: 100%;
+    max-width: 80%;
+    text-align: center;
   }
 
   .img-tag,
@@ -158,7 +164,11 @@ body {
   .vision-box {
     padding: 0;
     width: 100%;
-    text-align: center;
+    text-align: start;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 

@@ -3,7 +3,7 @@ import "./whoarewe.css"
 const Whoarewe = () => {
   return (
     <>
-    <div className="container">
+     <div className="container">
          <div className="wrapper">
          <div className="left">
             <div className="heading">
@@ -25,15 +25,15 @@ const Whoarewe = () => {
             </div>
             <div className="stat-box">
                <div className="stat-number">100+</div>
-               <div className="stat-label">Current <br/> Members</div>
+               <div className="stat-label">Current Members</div>
             </div>
             <div className="stat-box">
                <div className="stat-number">32+</div>
-               <div className="stat-label">Research <br/> Papers</div>
+               <div className="stat-label">Research Papers</div>
             </div>
             <div className="stat-box">
                <div className="stat-number">5+</div>
-               <div className="stat-label">Patents <br/> Filed</div>
+               <div className="stat-label">Patents Filed</div>
             </div>
        </div>
     </div>

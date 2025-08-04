@@ -1,22 +1,5 @@
-#root {
-  margin: 0 auto;
-  padding: 1rem;
-  padding-top: 0;
-  text-align: center;
-}
 
-html{
-   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html::-webkit-scrollbar {
-  display: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;  
-}
-
-.content {
+.content1 {
   display: flex;
   padding-top: 1rem;
   font-family: 'Orbitron', sans-serif;
@@ -52,13 +35,13 @@ html::-webkit-scrollbar {
   align-items: center;
 }
 
-  .content{
+  .content1{
     font-size: 1.7rem;
   }
 }
 
 @media (max-width: 480px) {
-  .content{
+  .content1{
     font-size: 1.7rem;
   }
   
