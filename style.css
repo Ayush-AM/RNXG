@@ -48,8 +48,8 @@ body {
 
 .header-description {
 
-    font-size: 1.7rem;
-    line-height: 1.7;
+    font-size: 1.8rem;
+    line-height: 1.8;
     max-width: 640px;
     font-weight: normal;
     font-family: 'ICELAND';
@@ -99,7 +99,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 50px;
     min-height: 36vh;
     max-width: 100%
 }
@@ -109,10 +109,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 40px;    */
-    min-width: 145vh;
+    /* margin-top: 40px; */
+    min-width: 169vh;
     z-index: 0;
-    min-height: 33vh;
+    min-height: 42vh;
+    overflow: hidden;
 }
 
 .Acheivement-Title img {
@@ -209,7 +210,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 10px 0;
     overflow: hidden;
 }
 
@@ -425,10 +426,431 @@ body {
 
 
 
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+
+    /* Main header section layout */
+    .main-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 27px;
+        align-content: center;
+        min-height: 91vh;
+        gap: 30px;
+    }
+
+    /* Left: Text part */
+    .header-text {
+        flex: 1.6;
+        min-width: 300px;
+        justify-content: center;
+        text-align: center;
+        display: grid;
+        row-gap: 34px;
+
+    }
+
+    .header-title h1 {
+        font-size: 6.9rem;
+        font-family: 'Iceland', sans-serif;
+        font-weight: normal;
+    }
+
+    .header-description {
+
+        font-size: 1.7rem;
+        line-height: 1.6;
+        max-width: 640px;
+        font-weight: normal;
+        font-family: 'ICELAND';
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .divider-icon {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .divider-icon img {
+        max-width: 100%;
+        height: auto;
+        opacity: 0.8;
+    }
+
+    /* Right: Image part */
+    .header-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 150px;
+    }
+
+    .img-box {
+        display: flex;
+        margin-left: 10px;
+        /* width: 68%; */
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-img img {
+        max-width: 89%;
+        height: auto;
+    }
+
+    /* Achivement Section  */
+
+    /* achivement title */
+    .title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0px;
+        min-height: 36vh;
+        max-width: 100%
+    }
+
+    .Acheivement-Title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 40px;    */
+        min-width: 175vh;
+        z-index: 0;
+        min-height: 33vh;
+    }
+
+    .Acheivement-Title img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        /* top: 0;
+    left: 0; */
+
+        /* z-index: 0; */
+    }
+
+    .Acheivement-Title h2 {
+        position: relative;
+        font-size: 3.3rem;
+        font-family: Italiana, serif;
+        z-index: 1;
+        min-height: auto;
+        margin: 5px;
+        font-weight: lighter;
+
+    }
+
+    .glass-card p {
+        width: 100%;
+        font-size: 12.8px;
+        color: #fff;
+        line-height: 2.2;
+    }
+
+}
 
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+    /* Main header section layout */
+    .main-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 27px;
+        align-content: center;
+        min-height: 91vh;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    /* Left: Text part */
+    .header-text {
+        font-size: 1.55rem;
+        line-height: 1.6;
+        max-width: 640px;
+        font-weight: normal;
+        font-family: 'ICELAND';
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+    }
+
+    .header-title h1 {
+        font-size: 7.3rem;
+        font-family: 'Iceland', sans-serif;
+        font-weight: normal;
+    }
+
+    .header-description {
+
+        font-size: 1.59rem;
+        line-height: 1.9;
+        max-width: 640px;
+        font-weight: normal;
+        font-family: 'ICELAND';
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .divider-icon {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .divider-icon img {
+        max-width: 100%;
+        height: auto;
+        opacity: 0.8;
+    }
+
+    /* Right: Image part */
+    .header-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 150px;
+    }
+
+    .img-box {
+        display: flex;
+        margin-left: 10px;
+        /* width: 68%; */
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-img img {
+        max-width: 62%;
+        height: auto;
+        margin-top: 20px;
+    }
 
 
-@media (max-width: 480px) {}
+    /* Achivement Section  */
+
+    /* achivement title */
+    .title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        min-height: 36vh;
+        max-width: 100%
+    }
+
+    .Acheivement-Title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 40px;    */
+        min-width: 145vh;
+        z-index: 0;
+        min-height: 33vh;
+    }
+
+    .Acheivement-Title img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+
+    }
+
+    .Acheivement-Title h2 {
+        position: relative;
+        font-size: 2.8rem;
+        font-family: Italiana, serif;
+        z-index: 1;
+        min-height: auto;
+        margin: 5px;
+        font-weight: lighter;
+
+    }
+
+    /* Event Header */
+
+    .event-header h2 {
+
+        font-family: 'Iceland', sans-serif;
+        font-size: 3.2em;
+        letter-spacing: 2px;
+        padding-bottom: 5px;
+        font-weight: normal;
+        display: inline-block;
+        border-bottom: 2px solid #fff !important;
+        color: #fff !important;
+        background: transparent !important;
+        opacity: 1 !important;
+
+
+    }
+
+    .glass-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 149vh;
+        height: 24vh;
+        background-color: #ffffff00;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(7px);
+        border-radius: 48px;
+        border: none;
+        box-shadow: inset 0px 6px 20px 0px rgb(97 7 162), inset 0px 2px 17px 0px rgb(85 6 142 / 87%), inset 0 0px 0px 0px rgb(108 4 148 / 85%), inset 0px 11px 20px 0px rgb(45 0 111 / 90%);
+        padding: 25px 35px;
+
+    }
+
+
+
+    .glass-card p {
+        width: 100%;
+        font-size: 12.6px;
+        color: #fff;
+        line-height: 1.9;
+    }
+
+
+}
+
+
+/* Responsive Design for Mobile (under 450px) */
+@media (max-width: 450px) {
+
+    /* Main header section */
+    .main-header {
+        flex-direction: column;
+        padding: 15px;
+        min-height: auto;
+        gap: 20px;
+    }
+
+    .header-title h1 {
+        font-size: 4rem;
+    }
+
+    .header-description {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        gap: 20px;
+    }
+
+    .header-img img {
+        max-width: 70%;
+    }
+
+    /* Achievement title */
+    .title-container {
+        min-height: 20vh;
+    }
+
+    .Acheivement-Title {
+        min-width: 108%;
+        min-height: 20vh;
+    }
+
+    .Acheivement-Title h2 {
+        font-size: 2rem;
+    }
+
+    /* Event sections */
+
+    .event-section {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        padding: 0px;
+        text-align: center;
+        font-family: 'Segoe UI', sans-serif;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+        /* margin-bottom: 15vh; */
+
+    }
+
+    .event-header h2 {
+        font-size: 25.6px;
+    }
+
+    .sih-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Slider adjustments */
+    .slider-wrapper {
+        height: 200px;
+    }
+
+    .list {
+        width: 300px;
+    }
+
+    .list li {
+        width: 120px;
+        height: 120px;
+    }
+
+    .list .act {
+        transform: translateX(0) scale(1.05);
+    }
+
+    .list .prev {
+        transform: translateX(-130px) scale(0.7);
+    }
+
+    .list .next {
+        transform: translateX(130px) scale(0.7);
+    }
+
+    .list .prev:hover {
+        transform: translateX(-130px) scale(0.75);
+    }
+
+    .list .next:hover {
+        transform: translateX(130px) scale(0.75);
+    }
+
+    .swipe {
+        width: 280px;
+    }
+
+    /* Glass card */
+    .glass-card {
+        height: auto;
+        min-height: 21vh;
+        padding: 15px 20px;
+        border-radius: 43px;
+    }
+
+    .glass-card p {
+        font-size: 12.3px;
+        line-height: 1.5;
+
+    }
+
+    /* Divider */
+    .glow-divider {
+        margin: 8vh;
+    }
+}
+
