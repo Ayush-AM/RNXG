@@ -15,7 +15,14 @@ const App = () => {
   }, []);
 
   const handleExploreClick = () => {
-    document.getElementById("cards-section").scrollIntoView({ behavior: "smooth" });
+    try {
+      const element = document.getElementById("cards-section");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } catch (error) {
+      console.warn('Scroll navigation failed:', error);
+    }
   };
 
   return (

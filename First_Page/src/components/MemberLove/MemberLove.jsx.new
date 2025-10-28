@@ -1,0 +1,101 @@
+import React, { useState, useEffect, useRef } from 'react';
+import './MemberLove.css';
+
+const MemberLove = () => {
+  const [slides, setSlides] = useState([
+    { id: 1, content: '1' },
+    { id: 2, content: '2' },
+    { id: 3, content: '3' },
+    { id: 4, content: '4' },
+    { id: 5, content: '5' },
+    { id: 6, content: '6' },
+  ]);
+  
+  // For desktop view, the middle slide (index 1) is active
+  const activeIndex = 1;
+  const intervalRef = useRef(null);
+  
+  // Function to rotate the slides array for infinite loop effect
+  const rotateSlides = () => {
+    setSlides(prevSlides => {
+      const newSlides = [...prevSlides];
+      // Take the first element and move it to the end
+      const firstSlide = newSlides.shift();
+      newSlides.push(firstSlide);
+      return newSlides;
+    });
+  };
+
+  // Auto-rotate slides every 1.5 seconds
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      rotateSlides();
+    }, 1500);
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, []);
+
+  // Generate navigation dots
+  const renderDots = () => {
+    return slides.map((slide, index) => (
+      <div 
+        key={slide.id} 
+        className={`nav-dot ${index === activeIndex ? 'active' : ''}`}
+        onClick={() => {
+          // Move slides to make the clicked one active
+          let rotationsNeeded = index - activeIndex;
+          if (rotationsNeeded < 0) {
+            rotationsNeeded += slides.length;
+          }
+          
+          // Clear existing interval
+          if (intervalRef.current) {
+            clearInterval(intervalRef.current);
+          }
+          
+          // Perform the rotations
+          for (let i = 0; i < rotationsNeeded; i++) {
+            rotateSlides();
+          }
+          
+          // Restart the interval
+          intervalRef.current = setInterval(() => {
+            rotateSlides();
+          }, 1500);
+        }}
+      />
+    ));
+  };
+
+  return (
+    <div className="member-love-container">
+      <h2 className="member-love-title">Why Our Members Love Us</h2>
+      <img src="/cline.png" alt="Decorative element" className="cline-top-right" />
+      
+      <div className="member-love-carousel-container">
+        <div className="member-love-carousel">
+          {slides.map((slide, index) => (
+            <div 
+              key={slide.id} 
+              className={`member-love-slide ${index === activeIndex ? 'active' : ''}`}
+            >
+              <div className="slide-content">
+                <span>{slide.content}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div className="nav-dots">
+          {renderDots()}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MemberLove;
