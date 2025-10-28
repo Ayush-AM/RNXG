@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Footer from "./components/footer/Footer.jsx";
+import Footer from "./components/Footer copy/Footer.jsx";
 import Cards from "./components/Cards/Cards.jsx";
 import SplineViewer from "./components/SplineViewer/SplineViewer.jsx";
 
