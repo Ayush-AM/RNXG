@@ -1,0 +1,89 @@
+.horizontal-swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagesSliderContainer {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.hori-slide-custom {
+  width: 25%;
+  height: 70%;
+  display: flex;
+  align-items: last baseline;
+  justify-content: center;
+}
+
+.hori-slide-custom img {
+  width: 12rem;
+  height: 80%;
+  border: 1px white solid;
+}
+
+.hori-slide-custom.active-slide {
+  opacity: 1;
+  transform: scale(1.5);
+  z-index: 9;
+}
+.swiper-pagination-bullet {
+  background-color: #ccc;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: yellow;
+  opacity: 1;
+}
+
+.hori-slide-custom {
+  width: 25%;
+  height: 81%; /* Ensure it takes full height */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: flex-end; /* Align everything to the bottom */
+}
+
+.hori-slide-custom img {
+  width: 12rem;
+  height: 70%;
+}
+
+.slide-text {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  margin-top: 5px; /* Space between image and text */
+  width: 50%; /* Ensure it aligns with the image */
+}
+
+
+@media (max-width: 900px) {
+  .hori-slide-custom.active-slide {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 9;
+  }
+
+  .hori-slide-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+  }
+}
