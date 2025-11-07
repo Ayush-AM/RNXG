@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+.wrapper {
+  width: 100%;
+  min-height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c003f;
+  /* optional dark bg */
+  overflow: hidden;
+  gap: 10vh;
+}
+
+
+
+.top-section {
+  /* width: 94%; */
+  max-width: 1420px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* gap: 2rem; */
+  /* margin: -96rem 0rem; */
+  min-height: 550px;
+}
+
+.left-side {
+
+  font-family: 'Iceland', sans-serif;
+  flex: 1;
+  color: #9D92CF;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 33px;
+  gap: 74px;
+}
+
+.left-side h1 {
+
+  font-size: 9.8rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.left-side img {
+  width: 100%;
+  width: 800px;
+
+}
+
+.left-side h3 {
+  max-width: 83%;
+  text-align: center;
+  font-size: 2.65rem;
+  opacity: 0.8;
+  margin: 0 auto;
+}
+
+.right-side {
+  flex: 1;
+  /* height: 351px; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* position: relative; */
+
+}
+
+.rightobj {
+  width: 72vw;
+  height: 36.3vw;
+  transform: translate(-250px, -44px) scale(1.1);
+  z-index: 0;
+}
+
+.bottom-section {
+  width: 90%;
+  max-width: 1200px;
+  padding: 2rem 0;
+}
+
+
+
+
+
+
+
+

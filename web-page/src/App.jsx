@@ -1,40 +1,30 @@
-import { useState } from 'react'
-import './App.css'
-import Divider from './assets/Divider.png'
-import Spline from '@splinetool/react-spline';
-import Slider from './components/Slider';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
+// Import all pages
+import Home from "./pages/Home";
+import Participations from "./pages/Participations";
+import Projects from "./pages/Projects";
+import Achievements from "./pages/Achievements";
+import About from "./pages/About";
 
 function App() {
   return (
-    <>
-      <div className='wrapper'>
-        <div className='top-section'>
-          <div className='left-side'>
-            <h1 >Participations</h1>
-            <img src={Divider} alt="divider" />
-            <h3 >Embraced challenges and conqered many competitions!</h3>
-          </div>
+    <Router>
+      {/* Navbar always visible */}
+      <Navbar />
 
-          <div className='right-side'>
-            <div className='rightobj'>
-           
-  <Spline  scene="https://prod.spline.design/DJ5s3rpJgJPnfZqQ/scene.splinecode" />
-
-</div>
-  </div>
-        </div>
-
-        <div className='bottom-section'>
-          <Slider />
-
-        </div>
-      </div>
-    </>
-  )
+      {/* Page Routes */}
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/participations" element={<Participations/>} />
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="/achievements" element={<Achievements/>} />
+        <Route path="/about" element={<About/>} />
+      </Routes>
+    </Router>
+  );
+  
 }
 
-export default App
-
-
-
+export default App;
