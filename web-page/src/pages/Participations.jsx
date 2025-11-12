@@ -1,4 +1,5 @@
 import Divider from '../assets/Divider.png';
+import Background from '../assets/Background.png';
 import Spline from '@splinetool/react-spline';
 import Slider from '../components/Slider';
 import './Participations.css'; // optional, only if you want to add page-specific CSS
@@ -9,12 +10,12 @@ export default function Participations() {
       <div className="top-section">
         <div className="left-side">
           <div className="left-content">
-             <h1>Participations</h1>
-          <img src={Divider} alt="divider" />
-          <h3>Embraced challenges and conquered many competitions!</h3>
-        
+            <h1>Participations</h1>
+            <img src={Divider} alt="divider" />
+            <h3>Embraced challenges and conquered many competitions!</h3>
+
           </div>
-         </div>
+        </div>
 
         <div className="right-side">
           <div className="rightobj">
