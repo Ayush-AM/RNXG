@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
 
 .wrapper {
+
   gap: 10vh;
   width: 100%;
   min-height: 131vh;
@@ -8,55 +9,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 1;
-  overflow: hidden;
-  background-image: radial-gradient(circle, #5353ff 0.65px, transparent 0.65px), 
-  radial-gradient(circle, #5353ff 0.65px, #17003ff2 0.65px), 
-  url(/src/assets/Background.png);
-  background-size: 26px 26px, 26px 26px, cover;
-  background-position: 0 0,13px 13px, center 0px;
+  background-color: #12051a;
+  background-image: radial-gradient(circle, rgb(14 91 185 / 51%) 1px, transparent 1px), radial-gradient(circle, rgb(84 91 222 / 43%) 1px, transparent 1px), url(/src/assets/Background.png);
+  background-size: 40px 40px, 40px 40px, cover;
+  background-position: 0 0, 20px 20px, center 1px;
   background-repeat: repeat, repeat, no-repeat;
-  background-blend-mode: normal;
-
-
-
 }
-/* 
-.wrapper {
-  overflow: hidden;
-  gap: 10vh;
-  width: 100%;
-  min-height: 130vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  opacity: 1;
 
-  background-image:
-    radial-gradient(circle, #5353ff 0.65px, transparent 0.65px),
-    radial-gradient(circle, #5353ff 0.65px, #0c003f 0.65px),
-    url('../assets/Background.png');
-
-  background-size:
-    26px 26px,
-    26px 26px,
-    cover;
-
-  background-position:
-    0 0,
-    13px 13px,
-    center;
-
-  background-repeat:
-    repeat,
-    repeat,
-    no-repeat;
-
-  background-blend-mode: lighten; 
-}
- */
 
 
 
