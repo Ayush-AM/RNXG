@@ -54,9 +54,9 @@
   width: 25%;
   height: 81%; /* Ensure it takes full height */
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column; 
   align-items: center;
-  justify-content: flex-end; /* Align everything to the bottom */
+  justify-content: flex-end;
 }
 
 .hori-slide-custom img {
@@ -68,8 +68,8 @@
   text-align: center;
   font-size: 14px;
   color: white;
-  margin-top: 5px; /* Space between image and text */
-  width: 50%; /* Ensure it aligns with the image */
+  margin-top: 5px; 
+  width: 50%;
 }
 
 

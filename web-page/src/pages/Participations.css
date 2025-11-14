@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
 
 .wrapper {
-
-  gap: 10vh;
-  width: 100%;
-  min-height: 131vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #12051a;
-  background-image: radial-gradient(circle, rgb(14 91 185 / 51%) 1px, transparent 1px), radial-gradient(circle, rgb(84 91 222 / 43%) 1px, transparent 1px), url(/src/assets/Background.png);
-  background-size: 40px 40px, 40px 40px, cover;
-  background-position: 0 0, 20px 20px, center 1px;
-  background-repeat: repeat, repeat, no-repeat;
+overflow: hidden;
+gap: 10vh;
+    width: 100%;
+    min-height: 131vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #12051a;
+    opacity: 4;
+    background-image: radial-gradient(circle, rgb(69 43 102 / 60%) 1px, transparent 1px), radial-gradient(circle, rgb(92 96 180 / 47%) 1px, transparent 1px), url(/src/assets/Background.png);
+    background-size: 40px 40px, 40px 40px, cover;
+    background-position: 0 0, 20px 20px, center 1px;
+    background-repeat: repeat, repeat, no-repeat;
 }
 
 

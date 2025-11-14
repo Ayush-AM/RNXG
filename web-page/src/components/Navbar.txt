@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+/* Navbar container */
+.navbar {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  backdrop-filter: blur(0.2px);
+  padding: 15px 50px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'Iceland', sans-serif;
+}
+
+/* Remove unwanted line */
+.navbar::after {
+  content: none;
+}
+
+/* Logo styling */
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Navbar links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link styling */
+.nav-links a {
+  margin: 0 12px;
+  color: #ccc;
+  text-shadow: 0 0 6px rgba(0,0,0,0.5);
+  font-size: 22px;
+  letter-spacing: 3px;
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Underline setup */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;              /* Start from the center */
+  transform: translateX(-50%); /* Center alignment */
+  width: 0;
+  height: 2px;
+  background-color: #9D92CF; /* Purple underline */
+  transition: width 0.3s ease;
+}
+
+/* Hover effects */
+.nav-links a:hover {
+  color: #9D92CF;
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Expands from center to both sides */
+}
+
+/* Active link styling */
+.nav-links a.active {
+  color: #9D92CF;
+  border-bottom: 3px solid #9D92CF;
+  border-radius: 2px;
+  padding-bottom: 4px;
+}
