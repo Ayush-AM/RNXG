@@ -1,5 +1,9 @@
 # RNXG - Robotics for Next Generation
 
+
+## Tech Stack
+
+
 ## Project Location
 Project Path: `c:\Users\ASUS\OneDrive\Desktop\Official Rnxg\RNXG\README.md`
 
